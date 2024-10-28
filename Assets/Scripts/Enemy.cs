@@ -11,14 +11,17 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float speed = 2f;
     void Start()
     {
-        player = GameObject.FindWithTag("Player").GetComponent<Transform>();
+
+        if(GameObject.FindWithTag("Player"))
+        {
+            player = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        }       
         rb = GetComponent<Rigidbody2D>();
     }
 
-
     void FixedUpdate()
     {
-        if (player != null)
+        if (player != null && followsPlayer)
         {
             // Calcular la dirección hacia el jugador
             Vector2 direction = (player.position - transform.position).normalized;

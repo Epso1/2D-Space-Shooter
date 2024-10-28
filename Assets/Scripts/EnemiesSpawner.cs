@@ -44,7 +44,8 @@ public class EnemiesSpawner : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        Debug.Log(collision.name);
+        if (collision.CompareTag("MainCamera"))
         {
             StartCoroutine(SpawnEnemiesEnum());
             GetComponent<BoxCollider2D>().enabled = false;

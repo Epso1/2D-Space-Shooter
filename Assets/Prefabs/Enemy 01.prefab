@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2870448737234313297}
   m_Layer: 0
   m_Name: Enemy 01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.9339623, g: 0.41102192, b: 0.2775454, a: 1}
   m_FlipX: 0
@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dfdda1980baa0546828edc1e063d88f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followsPlayer: 0
+  speed: 2
 --- !u!95 &4916923830271772278
 Animator:
   serializedVersion: 5

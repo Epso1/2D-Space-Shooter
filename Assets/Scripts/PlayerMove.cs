@@ -33,6 +33,11 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
+
+        float hor = Input.GetAxis("Horizontal");
+        float ver = Input.GetAxis("Vertical");
+        Vector2 inputDirection = new Vector2(hor, ver).normalized;
+        Debug.Log("(" + inputDirection.x + "," + inputDirection.y + ")");
         // Almacenamos el input de movimiento en la variable moveInput
         moveInput = playerInput.actions["Move"].ReadValue<Vector2>();
 
