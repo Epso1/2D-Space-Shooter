@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletVelocity: 20
+  bulletSFX: {fileID: 8300000, guid: 82106f57fabeb7e449c9ece356ca363b, type: 3}
 --- !u!50 &799944632571712106
 Rigidbody2D:
   serializedVersion: 4
@@ -125,8 +126,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!58 &4973430167146782827
 CircleCollider2D:
   m_ObjectHideFlags: 0

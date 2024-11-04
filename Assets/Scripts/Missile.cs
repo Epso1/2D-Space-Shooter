@@ -22,9 +22,12 @@ public class Missile : MonoBehaviour
     private Vector3 currentDirection;               // Dirección actual del misil
     private Vector3 targetDirection;
 
-    void Start()
+    private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+    void Start()
+    {
         waitTime = initialWait;                    // Inicializa el contador de espera
         currentDirection = initialDirection;       // Establece la dirección inicial
         SetSpriteDirection(currentDirection);

@@ -12,16 +12,6 @@ public class EnemiesSpawner : MonoBehaviour
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private Transform initialPosition;
 
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
-    }
-
     public void SpawnEnemies()
     {
         StartCoroutine(SpawnEnemiesEnum());
@@ -44,7 +34,6 @@ public class EnemiesSpawner : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name);
         if (collision.CompareTag("MainCamera"))
         {
             StartCoroutine(SpawnEnemiesEnum());

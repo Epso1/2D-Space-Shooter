@@ -4,19 +4,36 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] private bool flipHorizontally = false;
     [SerializeField] private bool followsPlayer = false;
+    [SerializeField] private GameObject explosionPrefab;
     private Transform player;
     private Rigidbody2D rb;
+    private Collider2D collider2D;
+    private Animator animator;
 
     [SerializeField] private float speed = 2f;
-    void Start()
+    void Awake()
     {
-
         if(GameObject.FindWithTag("Player"))
         {
             player = GameObject.FindWithTag("Player").GetComponent<Transform>();
         }       
         rb = GetComponent<Rigidbody2D>();
+        collider2D = GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();
+    }
+    private void Start()
+    {
+        collider2D.enabled = false;
+        if (flipHorizontally == true)
+        {
+            if (transform.position.y < 0)
+            {
+                animator.SetTrigger("FlipHorizontally");
+            }
+        }
+        
     }
 
     void FixedUpdate()
@@ -41,10 +58,24 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") || collision.CompareTag("Player_Bullet")) 
+        if (collision.CompareTag("Player_Bullet"))
         {
             Destroy(collision.gameObject);
-            Destroy(gameObject);
+            EnemyDies();
         }
+        else if (collision.CompareTag("Player"))
+        {
+            EnemyDies();
+        }
+    }
+    private void OnBecameVisible()
+    {
+        collider2D.enabled = true;
+    }
+
+    private void EnemyDies()
+    {
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

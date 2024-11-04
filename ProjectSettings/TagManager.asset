@@ -7,6 +7,9 @@ TagManager:
   - Player_Bullet
   - Enemy
   - Obstacle
+  - AudioSourceFX1
+  - AudioSourceFX2
+  - AudioSourceFX3
   layers:
   - Default
   - TransparentFX
