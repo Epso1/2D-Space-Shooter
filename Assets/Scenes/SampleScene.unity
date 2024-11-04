@@ -1602,6 +1602,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 164428171}
+  - {fileID: 1842397608}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &363654869
@@ -1649,6 +1650,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 05627f54-9960-4369-ba1c-387b500fcda9
     m_ActionName: Spaceship/Shoot[/Keyboard/ctrl]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 363654874}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: shootMissile
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 03688fb4-f59f-4f2d-aa3c-681730260a8b
+    m_ActionName: Spaceship/Missile[/Keyboard/shift]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Spaceship
@@ -1761,7 +1778,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveVelocity: 5
   bulletPrefab: {fileID: 1948600228137592560, guid: fb11cfd88afb1a84393f294763268bd0, type: 3}
+  missilePrefab: {fileID: 5546985419101250759, guid: f631cc0d30c3f0b4a80e9de8097add0b, type: 3}
   bulletOrigin: {fileID: 164428171}
+  missileOrigin: {fileID: 1842397608}
   shotSFX: {fileID: 8300000, guid: 82106f57fabeb7e449c9ece356ca363b, type: 3}
   explosionPrefab: {fileID: 8173109279539907194, guid: 01cc7d102c9e93d4b90c666280201c86, type: 3}
   gameManager: {fileID: 663322520}
@@ -2644,7 +2663,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2878,11 +2897,13 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 9b9e6b13fedf10545a88fe204158ac64, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 1c0bcf6db818ca442b099f0a426c1b10, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 10
     m_Data: {fileID: 422348383, guid: d0c0fe54922d7804f9ef0e66273b008c, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -1051200727, guid: d0c0fe54922d7804f9ef0e66273b008c, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -657801846, guid: d0c0fe54922d7804f9ef0e66273b008c, type: 3}
   - m_RefCount: 4
@@ -2895,6 +2916,8 @@ Tilemap:
     m_Data: {fileID: 113937936, guid: d0c0fe54922d7804f9ef0e66273b008c, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: -1691306447, guid: d0c0fe54922d7804f9ef0e66273b008c, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -1051200727, guid: d0c0fe54922d7804f9ef0e66273b008c, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 75
     m_Data:
@@ -8749,7 +8772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1002476404
 Transform:
   m_ObjectHideFlags: 0
@@ -8759,7 +8782,7 @@ Transform:
   m_GameObject: {fileID: 1002476403}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30, y: 0, z: 0}
+  m_LocalPosition: {x: 54, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8778,11 +8801,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialWait: 0
-  enemiesQuantity: 5
+  enemiesQuantity: 3
   wavesQuantity: 1
   waitNextEnemy: 0.5
   waitNextWave: 0
-  enemyPrefab: {fileID: 1851346218086564136, guid: 2df0bb75aae266142b86fdbede01c302, type: 3}
+  enemyPrefab: {fileID: 1851346218086564136, guid: 4a5919bc6e8848d40a1bec6a0e5ee73e, type: 3}
   initialPosition: {fileID: 1929667780}
 --- !u!61 &1002476406
 BoxCollider2D:
@@ -8974,7 +8997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1414674214
 Transform:
   m_ObjectHideFlags: 0
@@ -9007,7 +9030,7 @@ MonoBehaviour:
   wavesQuantity: 1
   waitNextEnemy: 0.5
   waitNextWave: 0
-  enemyPrefab: {fileID: 1851346218086564136, guid: 2df0bb75aae266142b86fdbede01c302, type: 3}
+  enemyPrefab: {fileID: 1851346218086564136, guid: 4a5919bc6e8848d40a1bec6a0e5ee73e, type: 3}
   initialPosition: {fileID: 94714044}
 --- !u!61 &1414674216
 BoxCollider2D:
@@ -14355,6 +14378,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1842397607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842397608}
+  m_Layer: 0
+  m_Name: Missile Origin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1842397608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842397607}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 363654868}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1855285844
 GameObject:
   m_ObjectHideFlags: 0

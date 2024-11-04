@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private float bulletVelocity = 50f;
+    [SerializeField] private float bulletSpeed = 50f;
     [SerializeField] private AudioClip bulletSFX;
     private Vector2 direction = Vector2.right;
     private Rigidbody2D rb2D;
@@ -27,7 +27,7 @@ public class Bullet : MonoBehaviour
     {
         if (canMove)
         {
-            rb2D.MovePosition(rb2D.position + direction * bulletVelocity * Time.fixedDeltaTime);
+            rb2D.MovePosition(rb2D.position + direction * bulletSpeed * Time.fixedDeltaTime);
         }
     }
 

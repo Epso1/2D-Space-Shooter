@@ -168,11 +168,6 @@ public class Missile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
-        {
-            Destroy(collision.gameObject); // Destruye el enemigo
-            Destroy(gameObject);           // Destruye el misil
-        }
         if (collision.CompareTag("Obstacle"))
         {
             Destroy(gameObject); // Destruye el misil

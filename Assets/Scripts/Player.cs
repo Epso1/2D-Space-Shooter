@@ -7,7 +7,9 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float moveVelocity = 1f;
     [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private GameObject missilePrefab;
     [SerializeField] private Transform bulletOrigin;
+    [SerializeField] private Transform missileOrigin;
     [SerializeField] private AudioClip shotSFX;
     [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private GameManager gameManager;
@@ -73,7 +75,7 @@ public class Player : MonoBehaviour
     {
         if (callbackContext.performed)
         {
-            Shoot();
+            Instantiate(bulletPrefab, bulletOrigin.position, Quaternion.identity);
         }
     }
 
@@ -84,14 +86,18 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void Shoot()
+   
+    public void shootMissile(InputAction.CallbackContext callbackContext)
     {
-        Instantiate(bulletPrefab, bulletOrigin.position, Quaternion.identity);
+        if (callbackContext.performed)
+        {
+            Instantiate(missilePrefab, missileOrigin.position, Quaternion.identity);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy") || collision.CompareTag("Obstacle"))
+        if (collision.CompareTag("Enemy") || collision.CompareTag("Obstacle") || collision.CompareTag("EnemyBullet"))
         {
             PlayerDies();
         }

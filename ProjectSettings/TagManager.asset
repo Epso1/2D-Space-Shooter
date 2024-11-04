@@ -4,12 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Player_Bullet
   - Enemy
   - Obstacle
   - AudioSourceFX1
   - AudioSourceFX2
   - AudioSourceFX3
+  - Missile
+  - EnemyBullet
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX

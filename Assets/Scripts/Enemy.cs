@@ -7,10 +7,16 @@ public class Enemy : MonoBehaviour
     [SerializeField] private bool flipHorizontally = false;
     [SerializeField] private bool followsPlayer = false;
     [SerializeField] private GameObject explosionPrefab;
+    [SerializeField] private bool canShoot;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private float minWaitToShoot = 0.5f;
+    [SerializeField] private float maxWaitToShoot = 4f;
+    [SerializeField] private Transform bulletOrigin;
     private Transform player;
     private Rigidbody2D rb;
     private Collider2D collider2D;
     private Animator animator;
+    private Vector2 lastDirection = Vector2.left;
 
     [SerializeField] private float speed = 2f;
     void Awake()
@@ -33,7 +39,10 @@ public class Enemy : MonoBehaviour
                 animator.SetTrigger("FlipHorizontally");
             }
         }
-        
+        if (canShoot == true)
+        {
+            StartCoroutine(Shoot());
+        }
     }
 
     void FixedUpdate()
@@ -42,12 +51,18 @@ public class Enemy : MonoBehaviour
         {
             // Calcular la dirección hacia el jugador
             Vector2 direction = (player.position - transform.position).normalized;
+            lastDirection = direction;
 
             // Calcular la nueva posición del enemigo
             Vector2 newPosition = rb.position + direction * speed * Time.fixedDeltaTime;
 
             // Mover el enemigo hacia la nueva posición
             rb.MovePosition(newPosition);
+        }
+        else if (player == null && followsPlayer)
+        {
+            Vector2 lastPosition = rb.position + lastDirection * speed * Time.fixedDeltaTime;
+            rb.MovePosition(lastPosition);
         }
     }
 
@@ -58,7 +73,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player_Bullet"))
+        if (collision.CompareTag("PlayerBullet") || collision.CompareTag("Missile"))
         {
             Destroy(collision.gameObject);
             EnemyDies();
@@ -77,5 +92,18 @@ public class Enemy : MonoBehaviour
     {
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
+    }
+
+    private IEnumerator Shoot()
+    {
+        float randomWaitTime = Random.Range(minWaitToShoot, maxWaitToShoot);
+        yield return new WaitForSeconds(randomWaitTime);
+        if (player != null)
+        {
+            Vector3 shotDirection = (player.position - transform.position).normalized;
+            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            bullet.GetComponent<EnemyBullet>().direction = shotDirection;
+        }
+        
     }
 }
