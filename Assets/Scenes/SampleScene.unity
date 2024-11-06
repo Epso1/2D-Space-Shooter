@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 94714044}
   m_Layer: 0
-  m_Name: Initial Position (8, 2)
+  m_Name: Position (8, 2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1726,7 +1726,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363654866}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1913,6 +1913,7 @@ Transform:
   m_Children:
   - {fileID: 94714044}
   - {fileID: 1929667780}
+  - {fileID: 1630113796}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &519420033
@@ -8505,7 +8506,7 @@ GameObject:
   - component: {fileID: 874540926}
   - component: {fileID: 874540928}
   m_Layer: 0
-  m_Name: Triggers
+  m_Name: Spawners
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8525,9 +8526,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1670252207}
-  - {fileID: 895065688}
   - {fileID: 1414674214}
-  - {fileID: 1002476404}
   m_Father: {fileID: 840763345}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &874540926
@@ -8658,200 +8657,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgVelocity: 2
---- !u!1 &895065687
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 895065688}
-  - component: {fileID: 895065690}
-  - component: {fileID: 895065689}
-  m_Layer: 0
-  m_Name: Enemies Spawner Trigger (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &895065688
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895065687}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 20, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 10, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 874540925}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
---- !u!114 &895065689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895065687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e078178f4748e4142a211666b45840ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialWait: 0
-  enemiesQuantity: 6
-  wavesQuantity: 2
-  waitNextEnemy: 0.5
-  waitNextWave: 8
-  enemyPrefab: {fileID: 7423195319562632434, guid: 1467b55a007cd424cb65cbba1123b3da, type: 3}
-  initialPosition: {fileID: 1929667780}
---- !u!61 &895065690
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895065687}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!1 &1002476403
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1002476404}
-  - component: {fileID: 1002476406}
-  - component: {fileID: 1002476405}
-  m_Layer: 0
-  m_Name: Enemies Spawner Trigger (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1002476404
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002476403}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 10, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 874540925}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1002476405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002476403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e078178f4748e4142a211666b45840ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialWait: 0
-  enemiesQuantity: 3
-  wavesQuantity: 1
-  waitNextEnemy: 0.5
-  waitNextWave: 0
-  enemyPrefab: {fileID: 1851346218086564136, guid: 4a5919bc6e8848d40a1bec6a0e5ee73e, type: 3}
-  initialPosition: {fileID: 1929667780}
---- !u!61 &1002476406
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1002476403}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1024995450
 GameObject:
   m_ObjectHideFlags: 0
@@ -8992,7 +8797,7 @@ GameObject:
   - component: {fileID: 1414674216}
   - component: {fileID: 1414674215}
   m_Layer: 0
-  m_Name: 'Enemies Spawner Trigger 01 '
+  m_Name: Ship 02 Spawner 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9007,7 +8812,7 @@ Transform:
   m_GameObject: {fileID: 1414674213}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24, y: 0, z: 0}
+  m_LocalPosition: {x: 25, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9027,11 +8832,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialWait: 0
   enemiesQuantity: 3
-  wavesQuantity: 1
-  waitNextEnemy: 0.5
-  waitNextWave: 0
+  wavesQuantity: 3
+  waitNextEnemy: 1
+  primaryWaitNextWave: 5
+  secondaryWaitNextWave: 5
   enemyPrefab: {fileID: 1851346218086564136, guid: 4a5919bc6e8848d40a1bec6a0e5ee73e, type: 3}
-  initialPosition: {fileID: 94714044}
+  primaryPosition: {fileID: 1630113796}
+  secondaryPosition: {fileID: 1630113796}
 --- !u!61 &1414674216
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9205,6 +9012,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1630113795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1630113796}
+  m_Layer: 0
+  m_Name: Position (8, 0)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1630113796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630113795}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8, y: 0, z: 10}
+  m_LocalScale: {x: 1, y: 10, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 519420032}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1647713991
 GameObject:
   m_ObjectHideFlags: 0
@@ -14165,7 +14003,7 @@ GameObject:
   - component: {fileID: 1670252209}
   - component: {fileID: 1670252208}
   m_Layer: 0
-  m_Name: Enemies Spawner Trigger (2)
+  m_Name: Ship 01 Spawner 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14200,11 +14038,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialWait: 0
   enemiesQuantity: 6
-  wavesQuantity: 2
+  wavesQuantity: 6
   waitNextEnemy: 0.5
-  waitNextWave: 8
+  primaryWaitNextWave: 1
+  secondaryWaitNextWave: 2
   enemyPrefab: {fileID: 7423195319562632434, guid: 1467b55a007cd424cb65cbba1123b3da, type: 3}
-  initialPosition: {fileID: 94714044}
+  primaryPosition: {fileID: 94714044}
+  secondaryPosition: {fileID: 1929667780}
 --- !u!61 &1670252209
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14547,7 +14387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1929667780}
   m_Layer: 0
-  m_Name: Initial Position (8, -2)
+  m_Name: Position (8, -2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

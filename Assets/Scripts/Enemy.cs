@@ -4,68 +4,38 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private bool flipHorizontally = false;
-    [SerializeField] private bool followsPlayer = false;
     [SerializeField] private GameObject explosionPrefab;
-    [SerializeField] private bool canShoot;
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private float minWaitToShoot = 0.5f;
-    [SerializeField] private float maxWaitToShoot = 4f;
-    [SerializeField] private Transform bulletOrigin;
-    private Transform player;
-    private Rigidbody2D rb;
-    private Collider2D collider2D;
-    private Animator animator;
-    private Vector2 lastDirection = Vector2.left;
 
-    [SerializeField] private float speed = 2f;
+    [SerializeField] private float minWaitToShoot = 0.2f;
+    [SerializeField] private float maxWaitToShoot = 2f;
+    [SerializeField] private Transform bulletOrigin;
+    
+    protected Transform player;
+    protected Rigidbody2D rb;
+    protected CircleCollider2D circleCollider;
+
     void Awake()
     {
+        // Si se encuentra al jugador, guarda su Transform en la variable player para poder dispararle
         if(GameObject.FindWithTag("Player"))
         {
             player = GameObject.FindWithTag("Player").GetComponent<Transform>();
-        }       
+        } 
+        
         rb = GetComponent<Rigidbody2D>();
-        collider2D = GetComponent<Collider2D>();
-        animator = GetComponent<Animator>();
-    }
-    private void Start()
-    {
-        collider2D.enabled = false;
-        if (flipHorizontally == true)
-        {
-            if (transform.position.y < 0)
-            {
-                animator.SetTrigger("FlipHorizontally");
-            }
-        }
-        if (canShoot == true)
-        {
-            StartCoroutine(Shoot());
-        }
+
+        // Guardamos el Collider para poder habilitarlo y deshabilitarlo
+        circleCollider = GetComponent<CircleCollider2D>();
+
+        // Deshabilita el Collider inicialmente para que no reciba disparos antes de ser visible
+        circleCollider.enabled = false;
+
+        // Inicia la corrutina de disparo        
+        StartCoroutine(Shoot());
     }
 
-    void FixedUpdate()
-    {
-        if (player != null && followsPlayer)
-        {
-            // Calcular la dirección hacia el jugador
-            Vector2 direction = (player.position - transform.position).normalized;
-            lastDirection = direction;
-
-            // Calcular la nueva posición del enemigo
-            Vector2 newPosition = rb.position + direction * speed * Time.fixedDeltaTime;
-
-            // Mover el enemigo hacia la nueva posición
-            rb.MovePosition(newPosition);
-        }
-        else if (player == null && followsPlayer)
-        {
-            Vector2 lastPosition = rb.position + lastDirection * speed * Time.fixedDeltaTime;
-            rb.MovePosition(lastPosition);
-        }
-    }
-
+    // Cuando el enemigo no es visible, destruirlo
     private void OnBecameInvisible()
     {
         Destroy(gameObject);
@@ -83,9 +53,10 @@ public class Enemy : MonoBehaviour
             EnemyDies();
         }
     }
+    // Cuando el enemigo es visible, activa su Collider
     private void OnBecameVisible()
     {
-        collider2D.enabled = true;
+        circleCollider.enabled = true;
     }
 
     private void EnemyDies()
@@ -94,6 +65,7 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+    // Dispara, despuÃ©s de un tiempo aleatorio, en la direcciÃ³n del jugador
     private IEnumerator Shoot()
     {
         float randomWaitTime = Random.Range(minWaitToShoot, maxWaitToShoot);

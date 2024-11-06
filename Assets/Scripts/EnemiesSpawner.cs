@@ -8,9 +8,11 @@ public class EnemiesSpawner : MonoBehaviour
     [SerializeField] private int enemiesQuantity;
     [SerializeField] private int wavesQuantity;
     [SerializeField] private float waitNextEnemy;
-    [SerializeField] private float waitNextWave;
+    [SerializeField] private float primaryWaitNextWave;
+    [SerializeField] private float secondaryWaitNextWave;
     [SerializeField] private GameObject enemyPrefab;
-    [SerializeField] private Transform initialPosition;
+    [SerializeField] private Transform primaryPosition;
+    [SerializeField] private Transform secondaryPosition;
 
     public void SpawnEnemies()
     {
@@ -22,13 +24,25 @@ public class EnemiesSpawner : MonoBehaviour
         yield return new WaitForSeconds(initialWait);
         for (int i = 0; i < wavesQuantity; i++)
         {
-            for (int j = 0; j < enemiesQuantity; j++)
+            if (i % 2 == 0)
             {
-                Instantiate(enemyPrefab, initialPosition.position, Quaternion.identity);
-                yield return new WaitForSeconds(waitNextEnemy);
+                for (int j = 0; j < enemiesQuantity; j++)
+                {
+                    Instantiate(enemyPrefab, primaryPosition.position, Quaternion.identity);
+                    yield return new WaitForSeconds(waitNextEnemy);
+                }
+                yield return new WaitForSeconds(primaryWaitNextWave);
             }
+            else
+            {
+                for (int j = 0; j < enemiesQuantity; j++)
+                {
+                    Instantiate(enemyPrefab, secondaryPosition.position, Quaternion.identity);
+                    yield return new WaitForSeconds(waitNextEnemy);
+                }
+                yield return new WaitForSeconds(secondaryWaitNextWave);
 
-            yield return new WaitForSeconds(waitNextWave);
+            }
         }
     }
 
