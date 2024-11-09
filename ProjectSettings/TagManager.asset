@@ -12,6 +12,9 @@ TagManager:
   - Missile
   - EnemyBullet
   - PlayerBullet
+  - AudioSourceFX4
+  - AudioSourceMusic
+  - AudioSourceVoice
   layers:
   - Default
   - TransparentFX

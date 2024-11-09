@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 935341439, guid: c85f6f41bc9465145944e903a59a6e0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -164,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 25
   bulletSFX: {fileID: 8300000, guid: 82106f57fabeb7e449c9ece356ca363b, type: 3}
+  explosionPrefab: {fileID: 2073585914889669550, guid: 0c16116b7be7f3a4fa2cecb50743dbb6, type: 3}
 --- !u!95 &1584848926504512155
 Animator:
   serializedVersion: 5

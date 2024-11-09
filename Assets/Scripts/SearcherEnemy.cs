@@ -8,6 +8,11 @@ public class SearcherEnemy : Enemy
     private Vector2 direction;
     private Vector2 lastDirection = Vector2.left;
 
+    private void Awake()
+    {
+        InitializeEnemy();
+    }
+
     void FixedUpdate()
     {
         if (player != null)

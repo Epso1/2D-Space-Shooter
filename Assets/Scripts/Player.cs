@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System;
 
 public class Player : MonoBehaviour
 {
+    // Eventos que la nave fantasma escuchará
+    public static event Action OnShoot;
+    public static event Action OnShootMissile;
+
     [SerializeField] private float moveVelocity = 1f;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private GameObject missilePrefab;
@@ -63,7 +68,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    // Método para limitar la posición del jugador dentro de los límites de la pantalla
     private Vector2 ClampPositionToScreen(Vector2 position)
     {
         float clampedX = Mathf.Clamp(position.x, screenBounds.x * -1 + playerWidth, screenBounds.x - playerWidth);
@@ -76,6 +80,18 @@ public class Player : MonoBehaviour
         if (callbackContext.performed)
         {
             Instantiate(bulletPrefab, bulletOrigin.position, Quaternion.identity);
+            // Disparar evento
+            OnShoot?.Invoke();
+        }
+    }
+
+    public void shootMissile(InputAction.CallbackContext callbackContext)
+    {
+        if (callbackContext.performed)
+        {
+            Instantiate(missilePrefab, missileOrigin.position, Quaternion.identity);
+            // Disparar evento
+            OnShootMissile?.Invoke();
         }
     }
 
@@ -86,21 +102,11 @@ public class Player : MonoBehaviour
         Destroy(gameObject);
     }
 
-   
-    public void shootMissile(InputAction.CallbackContext callbackContext)
-    {
-        if (callbackContext.performed)
-        {
-            Instantiate(missilePrefab, missileOrigin.position, Quaternion.identity);
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy") || collision.CompareTag("Obstacle") || collision.CompareTag("EnemyBullet"))
         {
             PlayerDies();
         }
-        
     }
 }

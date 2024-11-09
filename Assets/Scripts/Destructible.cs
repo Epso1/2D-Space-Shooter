@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class Destructible : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int parentedQuantity = 2;
+    // Contador de sistemas de hijos destruidos
+    private int parentedDestroyed = 0;
 
-    // Update is called once per frame
-    void Update()
+    // Método que se llama cuando un hijo se destruye
+    public void NotifyDestruction()
     {
-        
-    }
+        parentedDestroyed++;
 
-    public void DestroyThis()
-    {
-        Destroy(gameObject);
+        // Verifica si los hijos han sido destruidos
+        if (parentedDestroyed >= parentedQuantity)
+        {
+            // Destruye el GameObject padre
+            Destroy(gameObject);
+        }
     }
 }

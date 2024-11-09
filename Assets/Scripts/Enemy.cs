@@ -17,22 +17,7 @@ public class Enemy : MonoBehaviour
 
     void Awake()
     {
-        // Si se encuentra al jugador, guarda su Transform en la variable player para poder dispararle
-        if(GameObject.FindWithTag("Player"))
-        {
-            player = GameObject.FindWithTag("Player").GetComponent<Transform>();
-        } 
-        
-        rb = GetComponent<Rigidbody2D>();
-
-        // Guardamos el Collider para poder habilitarlo y deshabilitarlo
-        circleCollider = GetComponent<CircleCollider2D>();
-
-        // Deshabilita el Collider inicialmente para que no reciba disparos antes de ser visible
-        circleCollider.enabled = false;
-
-        // Inicia la corrutina de disparo        
-        StartCoroutine(Shoot());
+   
     }
 
     // Cuando el enemigo no es visible, destruirlo
@@ -73,9 +58,29 @@ public class Enemy : MonoBehaviour
         if (player != null)
         {
             Vector3 shotDirection = (player.position - transform.position).normalized;
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            GameObject bullet = Instantiate(bulletPrefab, bulletOrigin.position, Quaternion.identity);
             bullet.GetComponent<EnemyBullet>().direction = shotDirection;
         }
         
+    }
+
+    protected void InitializeEnemy()
+    {
+        // Si se encuentra al jugador, guarda su Transform en la variable player para poder dispararle
+        if (GameObject.FindWithTag("Player"))
+        {
+            player = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        }
+
+        rb = GetComponent<Rigidbody2D>();
+
+        // Guardamos el Collider para poder habilitarlo y deshabilitarlo
+        circleCollider = GetComponent<CircleCollider2D>();
+
+        // Deshabilita el Collider inicialmente para que no reciba disparos antes de ser visible
+        circleCollider.enabled = false;
+
+        // Inicia la corrutina de disparo        
+        StartCoroutine(Shoot());
     }
 }
