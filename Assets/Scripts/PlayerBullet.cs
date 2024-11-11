@@ -10,7 +10,6 @@ public class PlayerBullet : MonoBehaviour
     private Vector2 direction = Vector2.right;
     private Rigidbody2D rb2D;
     private AudioSource audioSourceFX2;
-    private bool canMove = false;
 
     private void Awake()
     {
@@ -26,10 +25,7 @@ public class PlayerBullet : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (canMove)
-        {
-            rb2D.MovePosition(rb2D.position + direction * bulletSpeed * Time.fixedDeltaTime);
-        }
+        rb2D.MovePosition(rb2D.position + direction * bulletSpeed * Time.fixedDeltaTime);
     }
 
     private void OnBecameInvisible()
@@ -37,10 +33,7 @@ public class PlayerBullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void SetCanMoveTrue()
-    {
-        canMove = true;
-    }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Obstacle"))

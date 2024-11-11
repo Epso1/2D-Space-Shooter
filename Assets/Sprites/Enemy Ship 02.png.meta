@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cd8afb61383541144956a5d713649d90
+guid: 4f746f997ddaf294d8e07e7c6646765f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spacechip 01_0
+      name: Enemy Ship 02_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8af4f84916b7e849a2e2077aaa72a0e
-      internalID: -790261585
+      spriteID: 1120ac32ae7b36e40bbe483513569071
+      internalID: -869943666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spacechip 01_1
+      name: Enemy Ship 02_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39b619c7d84062c42a05fc623063615d
-      internalID: -761030573
+      spriteID: 1985914579d270944aeb052853c03704
+      internalID: 1987173147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spacechip 01_2
+      name: Enemy Ship 02_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88aa25c199f294140b8407b19aaaefda
-      internalID: 2032271872
+      spriteID: fd3d296324747f94aa52eb757948ab97
+      internalID: -2066560484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spacechip 01_3
+      name: Enemy Ship 02_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 396442090ab60e6448d2a0923ba9700b
-      internalID: 1497892752
+      spriteID: 557a148d0f4b5964daaa0a21937e2328
+      internalID: 1998487225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spacechip 01_4
+      name: Enemy Ship 02_4
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 32
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +208,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1def189db696f649b7cdf3945c35b2b
-      internalID: 1146145655
+      spriteID: dfbfe60764fe2f6469eb331422acc461
+      internalID: 751261283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Ship 02_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c971bca39b2e39b4fb2e438ed965954f
+      internalID: -1234833653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Ship 02_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079e7b0b81a3a1844940d4df70d8a2e0
+      internalID: -1963938197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Ship 02_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c526a831f4ce945a6f49da9b3bee3b
+      internalID: -661805513
       vertices: []
       indices: 
       edges: []
@@ -225,11 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Spacechip 01_0: -790261585
-      Spacechip 01_1: -761030573
-      Spacechip 01_2: 2032271872
-      Spacechip 01_3: 1497892752
-      Spacechip 01_4: 1146145655
+      Enemy Ship 02_0: -869943666
+      Enemy Ship 02_1: 1987173147
+      Enemy Ship 02_2: -2066560484
+      Enemy Ship 02_3: 1998487225
+      Enemy Ship 02_4: 751261283
+      Enemy Ship 02_5: -1234833653
+      Enemy Ship 02_6: -1963938197
+      Enemy Ship 02_7: -661805513
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
