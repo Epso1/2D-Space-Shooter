@@ -27,23 +27,27 @@ public class Multiple : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Comprobar si el jugador se ha movido
-        if (player.position != lastPlayerPosition)
+        if (player != null)
         {
-            // Añadir la posición actual del jugador a la lista si se movió
-            playerPositions.Insert(0, player.position);
-            lastPlayerPosition = player.position;
-
-            // Asegurarse de que la lista no crezca demasiado
-            if (playerPositions.Count > delayFrames)
+            // Comprobar si el jugador se ha movido
+            if (player.position != lastPlayerPosition)
             {
-                // Mover la nave fantasma a la posición retrasada del jugador
-                transform.position = playerPositions[delayFrames];
+                // Añadir la posición actual del jugador a la lista si se movió
+                playerPositions.Insert(0, player.position);
+                lastPlayerPosition = player.position;
 
-                // Eliminar la posición más antigua
-                playerPositions.RemoveAt(playerPositions.Count - 1);
+                // Asegurarse de que la lista no crezca demasiado
+                if (playerPositions.Count > delayFrames)
+                {
+                    // Mover la nave fantasma a la posición retrasada del jugador
+                    transform.position = playerPositions[delayFrames];
+
+                    // Eliminar la posición más antigua
+                    playerPositions.RemoveAt(playerPositions.Count - 1);
+                }
             }
         }
+        
     }
 
     void OnEnable()
@@ -51,6 +55,7 @@ public class Multiple : MonoBehaviour
         // Subscribirse a los eventos del jugador
         Player.OnShoot += HandleShoot;
         Player.OnShootMissile += HandleShootMissile;
+        Player.OnPlayerDies += DestroyThis;
     }
 
     void OnDisable()
@@ -58,6 +63,7 @@ public class Multiple : MonoBehaviour
         // Desubscribirse de los eventos cuando se desactiva el objeto
         Player.OnShoot -= HandleShoot;
         Player.OnShootMissile -= HandleShootMissile;
+        Player.OnPlayerDies -= DestroyThis;
     }
 
     private void HandleShoot()
@@ -71,4 +77,10 @@ public class Multiple : MonoBehaviour
         // Lanzar un misil
         Instantiate(missilePrefab, missileOrigin.position, Quaternion.identity);
     }
+
+    private void DestroyThis()
+    {
+        Destroy(gameObject);
+    }
+
 }

@@ -167,6 +167,7 @@ MonoBehaviour:
   minWaitToShoot: 0.2
   maxWaitToShoot: 1
   bulletOrigin: {fileID: 6237696333041622097}
+  pointsWhenDies: 100
   speed: 6
   directionSprites:
   - {fileID: 751261283, guid: 4f746f997ddaf294d8e07e7c6646765f, type: 3}

@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     // Eventos que la nave fantasma escuchará
     public static event Action OnShoot;
     public static event Action OnShootMissile;
+    public static event Action OnPlayerDies;
 
     [SerializeField] private float moveVelocity = 1f;
     [SerializeField] private GameObject bulletPrefab;
@@ -17,7 +18,6 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform missileOrigin;
     [SerializeField] private AudioClip shotSFX;
     [SerializeField] private GameObject explosionPrefab;
-    [SerializeField] private GameManager gameManager;
 
     private Vector2 moveInput;
     private PlayerInput playerInput;
@@ -97,8 +97,10 @@ public class Player : MonoBehaviour
 
     private void PlayerDies()
     {
+        // Disparar evento
+        OnPlayerDies?.Invoke();
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-        gameManager.ReloadScene();
+        GameController.Instance.ReloadScene();
         Destroy(gameObject);
     }
 

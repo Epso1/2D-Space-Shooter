@@ -10,7 +10,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float minWaitToShoot = 0.2f;
     [SerializeField] private float maxWaitToShoot = 2f;
     [SerializeField] private Transform bulletOrigin;
-    
+
+    [SerializeField] private int pointsWhenDies = 50;
+
     protected Transform player;
     protected Rigidbody2D rb;
     protected CircleCollider2D circleCollider;
@@ -46,6 +48,7 @@ public class Enemy : MonoBehaviour
 
     private void EnemyDies()
     {
+        GameController.Instance.AddPointsToScore(pointsWhenDies);
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
