@@ -8,9 +8,9 @@ public class GameController : MonoBehaviour
 {
     [SerializeField] private float reloadSceneTime = 3f;
     [SerializeField] private AudioClip bgMusic;
-    [SerializeField] private float bgMusicWait = 0.5f;
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI topScoreText;
+    [SerializeField] private float bgMusicWait = 0f;
+    private TextMeshProUGUI scoreText;
+    private TextMeshProUGUI topScoreText;
 
     private int score;
     public AudioSource audioSourceMusic;
@@ -39,20 +39,7 @@ public class GameController : MonoBehaviour
     }
 
     void Start()
-    {
-        // Solo reinicializar si es necesario
-        if (audioSourceMusic == null)
-        {
-            audioSourceMusic = GameObject.FindWithTag("AudioSourceMusic").GetComponent<AudioSource>();
-        }
-        if (scoreText == null)
-        {
-            scoreText = GameObject.FindWithTag("ScoreText").GetComponent<TextMeshProUGUI>();
-        }
-        if (topScoreText == null)
-        {
-            topScoreText = GameObject.FindWithTag("TopScoreText").GetComponent<TextMeshProUGUI>();
-        }
+    {   
 
         highScoreManager = new HighScoreManager();
         highScores = highScoreManager.LoadHighScores();
@@ -65,8 +52,6 @@ public class GameController : MonoBehaviour
         //}
 
         Debug.Log(score);
-        // Reproducir música de fondo
-        StartCoroutine(PlayMusic());
     }
 
     void Update()
@@ -115,6 +100,8 @@ public class GameController : MonoBehaviour
         audioSourceMusic = GameObject.FindWithTag("AudioSourceMusic").GetComponent<AudioSource>();
         scoreText = GameObject.FindWithTag("ScoreText").GetComponent<TextMeshProUGUI>();
         topScoreText = GameObject.FindWithTag("TopScoreText").GetComponent<TextMeshProUGUI>();
+        // Reproducir música de fondo
+        StartCoroutine(PlayMusic());
     }
 
     private void OnDestroy()

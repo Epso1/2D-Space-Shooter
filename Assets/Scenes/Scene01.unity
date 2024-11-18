@@ -2073,7 +2073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AssetsPPU: 8
   m_RefResolutionX: 128
-  m_RefResolutionY: 64
+  m_RefResolutionY: 72
   m_UpscaleRT: 0
   m_PixelSnapping: 1
   m_CropFrameX: 1
@@ -3148,9 +3148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reloadSceneTime: 3
   bgMusic: {fileID: 8300000, guid: f3b56c95d1447be4ba4bd7ae32d35109, type: 3}
-  bgMusicWait: 0.5
-  scoreText: {fileID: 0}
-  topScoreText: {fileID: 0}
+  bgMusicWait: 0
   audioSourceMusic: {fileID: 0}
 --- !u!4 &663322521
 Transform:
@@ -3329,8 +3327,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 40, y: -10}
-  m_SizeDelta: {x: 240, y: 50}
+  m_AnchoredPosition: {x: 40, y: -40}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &689650108
 MonoBehaviour:
@@ -3354,8 +3352,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'SCORE: 999999999'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c4ce9693f02f0d04795560b081c9b012, type: 2}
-  m_sharedMaterial: {fileID: 1297669441073000067, guid: c4ce9693f02f0d04795560b081c9b012, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a1194750b6f7052439749c79aa84b033, type: 2}
+  m_sharedMaterial: {fileID: -8530099096879293308, guid: a1194750b6f7052439749c79aa84b033, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3379,8 +3377,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9110,8 +9108,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10}
-  m_SizeDelta: {x: 270, y: 50}
+  m_AnchoredPosition: {x: 0, y: -40}
+  m_SizeDelta: {x: 550, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &979665468
 MonoBehaviour:
@@ -9135,8 +9133,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'TOP SCORE: 999999999'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c4ce9693f02f0d04795560b081c9b012, type: 2}
-  m_sharedMaterial: {fileID: 1297669441073000067, guid: c4ce9693f02f0d04795560b081c9b012, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a1194750b6f7052439749c79aa84b033, type: 2}
+  m_sharedMaterial: {fileID: -8530099096879293308, guid: a1194750b6f7052439749c79aa84b033, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9160,8 +9158,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
