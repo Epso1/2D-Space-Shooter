@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System.Collections.Generic;
+using System.Linq;
 
 public class GameController : MonoBehaviour
 {
@@ -14,13 +15,12 @@ public class GameController : MonoBehaviour
 
     private int score;
     public AudioSource audioSourceMusic;
-    private HighScoreManager highScoreManager;
-    private List<int> highScores;
+    public HighScoreManager highScoreManager;
+    private List<ScoreRecord> highScores;
 
     private static GameController _instance;
 
     public static GameController Instance { get { return _instance; } }
-
 
     void Awake()
     {
@@ -34,41 +34,42 @@ public class GameController : MonoBehaviour
             DontDestroyOnLoad(this.gameObject); // Evita que se destruya al recargar la escena
             SceneManager.sceneLoaded += OnSceneLoaded; // Suscribirse al evento de carga de escena
         }
-
-        
     }
 
     void Start()
-    {   
-
+    {
         highScoreManager = new HighScoreManager();
         highScores = highScoreManager.LoadHighScores();
 
-        //// Imprimir las puntuaciones cargadas
-        //Debug.Log("Top 6 Puntuaciones:");
-        //foreach (int score in highScores)
-        //{
-        //    Debug.Log(score);
-        //}
-
-        Debug.Log(score);
+        // Asegúrate de que la lista nunca sea `null`
+        if (highScores == null || highScores.Count == 0)
+        {
+            highScores = new List<ScoreRecord> { new ScoreRecord("N/A", 0) };
+        }
     }
 
     void Update()
     {
         UpdateHighScores(score);
-        int topScore = highScores[0];
-        scoreText.text = "SCORE: " + score;
-        topScoreText.text = "TOP SCORE: " + topScore;
+
+        // Obtener la máxima puntuación de la lista
+        int topScore = highScores.Max(entry => entry.score);
+
+        if (scoreText != null)
+        {
+            scoreText.text = "SCORE: " + score;
+        }
+        if (topScoreText != null)
+        {
+            topScoreText.text = "TOP SCORE: " + topScore;
+        }      
+       
     }
 
     private IEnumerator PlayMusic()
     {
-        // Espera inicial
         yield return new WaitForSecondsRealtime(bgMusicWait);
-        // Carga el clip de la música en el AudioSource
         audioSourceMusic.clip = bgMusic;
-        // Reproduce la música de fondo
         audioSourceMusic.Play();
     }
 
@@ -90,26 +91,36 @@ public class GameController : MonoBehaviour
 
     public void UpdateHighScores(int newScore)
     {
-        highScores.Add(newScore);
+        highScores.Add(new ScoreRecord("N/A", newScore)); // Agregar la nueva puntuación con un marcador de iniciales
+        highScores = highScores.OrderByDescending(entry => entry.score).Take(6).ToList(); // Mantener solo los 6 mejores
         highScoreManager.SaveHighScores(highScores);
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Reinicializar los componentes necesarios al cargar una nueva escena
         audioSourceMusic = GameObject.FindWithTag("AudioSourceMusic").GetComponent<AudioSource>();
-        scoreText = GameObject.FindWithTag("ScoreText").GetComponent<TextMeshProUGUI>();
-        topScoreText = GameObject.FindWithTag("TopScoreText").GetComponent<TextMeshProUGUI>();
-        // Reproducir música de fondo
+
+        if (GameObject.FindWithTag("ScoreText") == true)
+        {
+            scoreText = GameObject.FindWithTag("ScoreText").GetComponent<TextMeshProUGUI>();
+        }
+        if (GameObject.FindWithTag("TopScoreText")) {
+            topScoreText = GameObject.FindWithTag("TopScoreText").GetComponent<TextMeshProUGUI>();
+        }        
+       
         StartCoroutine(PlayMusic());
     }
 
     private void OnDestroy()
     {
-        // Evita posibles referencias circulares o errores al destruir el objeto
         if (_instance == this)
         {
             SceneManager.sceneLoaded -= OnSceneLoaded;
         }
+    }
+
+    public int GetCurrentScore()
+    {
+        return score;
     }
 }

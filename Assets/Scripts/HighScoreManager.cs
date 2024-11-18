@@ -1,46 +1,67 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class HighScoreManager : Object
 {
-    private const string HighScoresKey = "HighScores";
+    public static string HighScoresKey = "HighScores";
 
-    public void SaveHighScores(List<int> scores)
+    public void SaveHighScores(List<ScoreRecord> entries)
     {
-        // Ordenar la lista en orden descendente y guardar solo los 6 mejores
-        scores.Sort((a, b) => b.CompareTo(a));
-        if (scores.Count > 6)
-        {
-            scores = scores.GetRange(0, 6);
-        }
+        // Ordenar la lista en orden descendente de puntuación y guardar solo los 6 mejores
+        entries = entries.OrderByDescending(entry => entry.score).Take(6).ToList();
 
-        // Serializar la lista a un string separado por comas
-        string serializedScores = string.Join(",", scores);
-        PlayerPrefs.SetString(HighScoresKey, serializedScores);
+        // Serializar la lista a un formato JSON
+        string serializedEntries = JsonUtility.ToJson(new ScoreRecordListWrapper { entries = entries });
+        PlayerPrefs.SetString(HighScoresKey, serializedEntries);
         PlayerPrefs.Save();
     }
 
-    public List<int> LoadHighScores()
+    public List<ScoreRecord> LoadHighScores()
     {
-        List<int> scores = new List<int>();
+        List<ScoreRecord> entries = new List<ScoreRecord>();
 
         if (PlayerPrefs.HasKey(HighScoresKey))
         {
-            // Deserializar la lista desde el string almacenado
-            string serializedScores = PlayerPrefs.GetString(HighScoresKey);
-            string[] scoreStrings = serializedScores.Split(',');
+            string serializedEntries = PlayerPrefs.GetString(HighScoresKey);
 
-            foreach (string score in scoreStrings)
+            if (!string.IsNullOrEmpty(serializedEntries))
             {
-                if (int.TryParse(score, out int parsedScore))
+                try
                 {
-                    scores.Add(parsedScore);
+                    ScoreRecordListWrapper wrapper = JsonUtility.FromJson<ScoreRecordListWrapper>(serializedEntries);
+                    if (wrapper != null && wrapper.entries != null)
+                    {
+                        entries = wrapper.entries;
+                    }
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError("Error parsing JSON: " + e.Message);
                 }
             }
         }
 
-        return scores;
+        return entries;
+    }
+
+    public void AddScore(ScoreRecord newEntry)
+    {
+        // Cargar las puntuaciones actuales
+        List<ScoreRecord> currentHighScores = LoadHighScores();
+
+        // Añadir la nueva entrada
+        currentHighScores.Add(newEntry);
+
+        // Guardar la lista actualizada
+        SaveHighScores(currentHighScores);
     }
 }
 
+// Clase contenedora para serializar/deserializar listas de entradas
+[System.Serializable]
+public class ScoreRecordListWrapper
+{
+    public List<ScoreRecord> entries;
+}
