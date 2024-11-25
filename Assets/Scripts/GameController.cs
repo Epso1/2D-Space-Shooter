@@ -10,12 +10,16 @@ public class GameController : MonoBehaviour
     [SerializeField] private float reloadSceneTime = 3f;
     [SerializeField] private AudioClip bgMusic;
     [SerializeField] private float bgMusicWait = 0f;
+    [SerializeField] private string gameOverSceneName = "GameOver";
+    [SerializeField] private string enterInitialsSceneName = "EnterInitials";
+    [SerializeField] private int lifes = 2;
+
     private TextMeshProUGUI scoreText;
     private TextMeshProUGUI topScoreText;
-
+    private TextMeshProUGUI lifesText;  
     private int score;
-    public AudioSource audioSourceMusic;
-    public HighScoreManager highScoreManager;
+    private AudioSource audioSourceMusic;
+    [HideInInspector] public HighScoreManager highScoreManager;
     private List<ScoreRecord> highScores;
 
     private static GameController _instance;
@@ -38,10 +42,11 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        // Instancia y carga las máximas puntuaciones
         highScoreManager = new HighScoreManager();
         highScores = highScoreManager.LoadHighScores();
 
-        // Asegúrate de que la lista nunca sea `null`
+        // Asegura que la lista nunca sea `null`
         if (highScores == null || highScores.Count == 0)
         {
             highScores = new List<ScoreRecord> { new ScoreRecord("N/A", 0) };
@@ -62,8 +67,20 @@ public class GameController : MonoBehaviour
         if (topScoreText != null)
         {
             topScoreText.text = "TOP SCORE: " + topScore;
-        }      
-       
+        } 
+        if (lifesText != null)
+        {
+            lifesText.text = "LIFES: " + lifes;
+        } 
+        
+        if (Input.GetKeyDown(KeyCode.KeypadMinus))
+        {
+            ResetMaxScore();
+        }
+        if (Input.GetKeyDown(KeyCode.KeypadPlus))
+        {
+            ShowHighScores();
+        }
     }
 
     private IEnumerator PlayMusic()
@@ -73,15 +90,45 @@ public class GameController : MonoBehaviour
         audioSourceMusic.Play();
     }
 
-    public void ReloadScene()
+    public void PlayerDies()
     {
-        StartCoroutine(ReloadSceneEnum());
+        if (lifes > -1)
+        {
+            StartCoroutine(ReloadSceneEnum());
+        }
+        else
+        {
+            lifes = 0;
+            StartCoroutine(GameOver());
+        }
     }
 
     private IEnumerator ReloadSceneEnum()
     {
         yield return new WaitForSeconds(reloadSceneTime);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private IEnumerator GameOver()
+    {
+        yield return new WaitForSeconds(reloadSceneTime);
+
+        // Cargar la lista de puntuaciones altas
+        highScores = highScoreManager.LoadHighScores();
+
+        // Comprobar si la puntuación actual está entre las 6 mejores
+        bool isHighScore = score > highScores.Last().score;
+
+        if (isHighScore)
+        {
+            // Si es una puntuación alta, cargar la escena para introducir iniciales
+            SceneManager.LoadScene(enterInitialsSceneName);
+        }
+        else
+        {
+            // Si no, cargar la escena de "Game Over"
+            SceneManager.LoadScene(gameOverSceneName);
+        }
     }
 
     public void AddPointsToScore(int points)
@@ -106,8 +153,12 @@ public class GameController : MonoBehaviour
         }
         if (GameObject.FindWithTag("TopScoreText")) {
             topScoreText = GameObject.FindWithTag("TopScoreText").GetComponent<TextMeshProUGUI>();
-        }        
-       
+        }
+        if (GameObject.FindWithTag("LifesText"))
+        {
+            lifesText = GameObject.FindWithTag("LifesText").GetComponent<TextMeshProUGUI>();
+        }
+
         StartCoroutine(PlayMusic());
     }
 
@@ -122,5 +173,21 @@ public class GameController : MonoBehaviour
     public int GetCurrentScore()
     {
         return score;
+    }
+
+    public void LoseOneLife()
+    {
+        lifes--;
+    }
+
+    public void ResetMaxScore()
+    {
+        highScoreManager.ResetHighScores();
+        Debug.Log("Max score has been reset.");
+    }
+
+    public void ShowHighScores()
+    {
+        highScoreManager.PrintHighScores();
     }
 }

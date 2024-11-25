@@ -57,6 +57,40 @@ public class HighScoreManager : Object
         // Guardar la lista actualizada
         SaveHighScores(currentHighScores);
     }
+
+    public void ResetHighScores()
+    {
+        // Crear una lista vacía o con un puntaje inicial predeterminado
+        List<ScoreRecord> defaultHighScores = new List<ScoreRecord> { new ScoreRecord("N/A", 0) };
+
+        // Guardar la lista vacía/predeterminada en PlayerPrefs
+        SaveHighScores(defaultHighScores);
+
+        Debug.Log("High scores have been reset to default.");
+    }
+
+    public void PrintHighScores()
+    {
+        // Cargar las puntuaciones actuales
+        List<ScoreRecord> highScores = LoadHighScores();
+
+        // Verificar si hay puntuaciones guardadas
+        if (highScores == null || highScores.Count == 0)
+        {
+            Debug.Log("No high scores available.");
+            return;
+        }
+
+        // Imprimir cada puntuación en la consola
+        Debug.Log("----- High Scores -----");
+        for (int i = 0; i < highScores.Count; i++)
+        {
+            Debug.Log($"{i + 1}. {highScores[i].initials}: {highScores[i].score}");
+        }
+        Debug.Log("-----------------------");
+    }
+
+
 }
 
 // Clase contenedora para serializar/deserializar listas de entradas
