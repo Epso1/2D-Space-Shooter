@@ -37,6 +37,7 @@ Material:
     - _CullMode: 0
     - _MaskSoftnessX: 0
     - _MaskSoftnessY: 0
+    - _Padding: 0
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -108,9 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Crang
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 81007833
   material: {fileID: -8840465816838775433}
-  materialHashCode: 0
+  materialHashCode: 1278977881
   m_Version: 1.1.0
   m_SourceFontFileGUID: c4a49d99b24a7ab4eb6f99aefae2187f
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: c4a49d99b24a7ab4eb6f99aefae2187f, type: 3}
