@@ -23,15 +23,14 @@ public class HighScoreEntry : MonoBehaviour
     private PlayerInput playerInput; // Referencia al sistema de input
     private Vector2 moveInput; // Vector para capturar el input de movimiento
 
-    private float blinkingTime = 0.25f;
+    private float blinkingTime = 0.25f;  //Duración del parpadeo de la inicial seleccionada
 
-    private GameController gameController;
 
     private void Awake()
     {
         // Inicializar PlayerInput y asignar el callback de movimiento
         playerInput = GetComponent<PlayerInput>();
-        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+
     }
 
     private void Start()
@@ -134,15 +133,14 @@ public class HighScoreEntry : MonoBehaviour
         // Convertir las iniciales a un string
         string finalInitials = new string(initials);
        
-        // Obtener la puntuación actual del GameController
-        int finalScore = gameController.GetCurrentScore(); // Método que retorna el score actual.
-
+        // Obtener la puntuación actual del DataManager
+        int finalScore = DataManager.Instance.score;
 
         // Crear un nuevo ScoreRecord con las iniciales y la puntuación
-        ScoreRecord newEntry = new ScoreRecord(finalInitials, finalScore);
+        HighScore newEntry = new HighScore(finalInitials, finalScore);
 
-        // Guardar el nuevo ScoreRecord en la lista de máximas puntuaciones
-        gameController.highScoreManager.AddScore(newEntry);
+        // Guardar el nuevo HighScore en la lista de máximas puntuaciones
+        DataManager.Instance.AddHighScore(newEntry);
 
         Debug.Log("Record entered: " + finalInitials + " " + finalScore);
 

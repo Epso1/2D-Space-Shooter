@@ -100,8 +100,7 @@ public class Player : MonoBehaviour
         // Disparar evento
         OnPlayerDies?.Invoke();
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-        GameController.Instance.LoseOneLife();
-        GameController.Instance.PlayerDies();
+        DataManager.Instance.LoseOneLife();
         Destroy(gameObject);
     }
 

@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class GameController : MonoBehaviour
 {
@@ -12,77 +13,24 @@ public class GameController : MonoBehaviour
     [SerializeField] private float bgMusicWait = 0f;
     [SerializeField] private string gameOverSceneName = "GameOver";
     [SerializeField] private string enterInitialsSceneName = "EnterInitials";
-    [SerializeField] private int lifes = 2;
 
     private TextMeshProUGUI scoreText;
     private TextMeshProUGUI topScoreText;
     private TextMeshProUGUI lifesText;  
-    private int score;
     private AudioSource audioSourceMusic;
-    [HideInInspector] public HighScoreManager highScoreManager;
-    private List<ScoreRecord> highScores;
 
-    private static GameController _instance;
-
-    public static GameController Instance { get { return _instance; } }
-
+    
     void Awake()
     {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            _instance = this;
-            DontDestroyOnLoad(this.gameObject); // Evita que se destruya al recargar la escena
-            SceneManager.sceneLoaded += OnSceneLoaded; // Suscribirse al evento de carga de escena
-        }
+        audioSourceMusic = GameObject.FindWithTag("AudioSourceMusic").GetComponent<AudioSource>();
+        scoreText = GameObject.FindWithTag("ScoreText").GetComponent<TextMeshProUGUI>();         
+        topScoreText = GameObject.FindWithTag("TopScoreText").GetComponent<TextMeshProUGUI>();      
+        lifesText = GameObject.FindWithTag("LifesText").GetComponent<TextMeshProUGUI>();        
+
+        StartCoroutine(PlayMusic());
     }
 
-    void Start()
-    {
-        // Instancia y carga las máximas puntuaciones
-        highScoreManager = new HighScoreManager();
-        highScores = highScoreManager.LoadHighScores();
-
-        // Asegura que la lista nunca sea `null`
-        if (highScores == null || highScores.Count == 0)
-        {
-            highScores = new List<ScoreRecord> { new ScoreRecord("N/A", 0) };
-        }
-    }
-
-    void Update()
-    {
-        UpdateHighScores(score);
-
-        // Obtener la máxima puntuación de la lista
-        int topScore = highScores.Max(entry => entry.score);
-
-        if (scoreText != null)
-        {
-            scoreText.text = "SCORE: " + score;
-        }
-        if (topScoreText != null)
-        {
-            topScoreText.text = "TOP SCORE: " + topScore;
-        } 
-        if (lifesText != null)
-        {
-            lifesText.text = "LIFES: " + lifes;
-        } 
-        
-        if (Input.GetKeyDown(KeyCode.KeypadMinus))
-        {
-            ResetMaxScore();
-        }
-        if (Input.GetKeyDown(KeyCode.KeypadPlus))
-        {
-            ShowHighScores();
-        }
-    }
-
+ 
     private IEnumerator PlayMusic()
     {
         yield return new WaitForSecondsRealtime(bgMusicWait);
@@ -92,13 +40,13 @@ public class GameController : MonoBehaviour
 
     public void PlayerDies()
     {
-        if (lifes > -1)
+        if (DataManager.Instance.lifes > -1)
         {
             StartCoroutine(ReloadSceneEnum());
         }
         else
         {
-            lifes = 0;
+            DataManager.Instance.lifes = 0;
             StartCoroutine(GameOver());
         }
     }
@@ -113,11 +61,8 @@ public class GameController : MonoBehaviour
     {
         yield return new WaitForSeconds(reloadSceneTime);
 
-        // Cargar la lista de puntuaciones altas
-        highScores = highScoreManager.LoadHighScores();
-
         // Comprobar si la puntuación actual está entre las 6 mejores
-        bool isHighScore = score > highScores.Last().score;
+        bool isHighScore = DataManager.Instance.score > DataManager.Instance.highScores[DataManager.Instance.highScores.Count - 1].score;
 
         if (isHighScore)
         {
@@ -131,63 +76,25 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void AddPointsToScore(int points)
+
+    public void UpdateScore(int score)
     {
-        score += points;
+        scoreText.text = "SCORE: " + score;
     }
 
-    public void UpdateHighScores(int newScore)
+    public void UpdateTopScore(int topScore)
     {
-        highScores.Add(new ScoreRecord("N/A", newScore)); // Agregar la nueva puntuación con un marcador de iniciales
-        highScores = highScores.OrderByDescending(entry => entry.score).Take(6).ToList(); // Mantener solo los 6 mejores
-        highScoreManager.SaveHighScores(highScores);
+        topScoreText.text = "TOP SCORE: " + topScore;
     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    public void UpdateLifes(int lifes)
     {
-        audioSourceMusic = GameObject.FindWithTag("AudioSourceMusic").GetComponent<AudioSource>();
-
-        if (GameObject.FindWithTag("ScoreText") == true)
+        int currentLifes = lifes;
+        if (lifes < 0)
         {
-            scoreText = GameObject.FindWithTag("ScoreText").GetComponent<TextMeshProUGUI>();
+            currentLifes = 0;
         }
-        if (GameObject.FindWithTag("TopScoreText")) {
-            topScoreText = GameObject.FindWithTag("TopScoreText").GetComponent<TextMeshProUGUI>();
-        }
-        if (GameObject.FindWithTag("LifesText"))
-        {
-            lifesText = GameObject.FindWithTag("LifesText").GetComponent<TextMeshProUGUI>();
-        }
-
-        StartCoroutine(PlayMusic());
-    }
-
-    private void OnDestroy()
-    {
-        if (_instance == this)
-        {
-            SceneManager.sceneLoaded -= OnSceneLoaded;
-        }
-    }
-
-    public int GetCurrentScore()
-    {
-        return score;
-    }
-
-    public void LoseOneLife()
-    {
-        lifes--;
-    }
-
-    public void ResetMaxScore()
-    {
-        highScoreManager.ResetHighScores();
-        Debug.Log("Max score has been reset.");
-    }
-
-    public void ShowHighScores()
-    {
-        highScoreManager.PrintHighScores();
+      
+        lifesText.text = "LIFES: " + currentLifes;
     }
 }

@@ -1,20 +1,26 @@
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class ScoreManager : MonoBehaviour
+public class DataManager : MonoBehaviour
 {
-    public static ScoreManager Instance; // Singleton para acceso global
-    public int score;
-    public int maxScore;
+    private static DataManager instance; // Singleton para acceso global
+
+    public static DataManager Instance { get { return instance; } }
+    [HideInInspector] public int score = 0;
+    private int topScore;
     public List<HighScore> highScores = new List<HighScore>();
+    [HideInInspector] public int lifes = 3;
+    private GameController gameController;
 
     private void Awake()
     {
-        if (Instance == null)
+        if (instance == null)
         {
-            Instance = this;
+            instance = this;
             DontDestroyOnLoad(gameObject);
+            SceneManager.sceneLoaded += OnSceneLoaded; // Suscribirse al evento de carga de escena
         }
         else
         {
@@ -24,8 +30,6 @@ public class ScoreManager : MonoBehaviour
 
     private void Start()
     {
-        ResetCurrentScore();
-        InitializeHighScores();
     }
 
     private void Update()
@@ -35,15 +39,21 @@ public class ScoreManager : MonoBehaviour
             PrintHighScores();
         }
 
-        UpdateHighScores();
+        if (score > topScore)
+        {
+            topScore = score;
+            gameController.UpdateTopScore(topScore);
+        }
     }
 
     public void AddPoints(int points)
     {
         score += points;
-        if (score > maxScore)
+        gameController.UpdateScore(score);
+        if (score > topScore)
         {
-            maxScore = score;
+            topScore = score;
+            gameController.UpdateTopScore(topScore);
         }
     }
 
@@ -66,6 +76,7 @@ public class ScoreManager : MonoBehaviour
         string json = JsonUtility.ToJson(new HighScoreListWrapper(highScores));
         PlayerPrefs.SetString("HighScores", json);
         PlayerPrefs.Save();
+        LoadHighScores();
     }
 
     public void LoadHighScores()
@@ -75,11 +86,14 @@ public class ScoreManager : MonoBehaviour
             string json = PlayerPrefs.GetString("HighScores");
             HighScoreListWrapper wrapper = JsonUtility.FromJson<HighScoreListWrapper>(json);
             highScores = wrapper.highScores;
+            highScores.Sort((a, b) => b.score.CompareTo(a.score));
+            
         }
         else
         {
-            highScores = new List<HighScore>();
+            InitializeHighScores();
         }
+        topScore = highScores[0].score;
     }
     public void PrintHighScores()
     {
@@ -130,6 +144,40 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        LoadHighScores();
+
+        if (GameObject.FindGameObjectWithTag("GameController"))
+        {
+            gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
+            gameController.UpdateTopScore(topScore);
+            gameController.UpdateScore(score);
+            gameController.UpdateLifes(lifes);
+        }
+        
+       
+    }
+
+    private void OnDestroy()
+    {
+        if (instance == this)
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+    }
+
+    public void LoseOneLife()
+    {
+        lifes--;
+        gameController.UpdateLifes(lifes);
+        gameController.PlayerDies();
+    }
+
+    public void AddHighScore(HighScore newHighScore)
+    {
+
+    }
 }
 
 [System.Serializable]
