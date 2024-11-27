@@ -1,14 +1,13 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance; // Singleton para acceso global
-    public int currentScore;
+    public int score;
     public int maxScore;
     public List<HighScore> highScores = new List<HighScore>();
-
-    private const int maxHighScores = 6;
 
     private void Awake()
     {
@@ -16,7 +15,6 @@ public class ScoreManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            LoadHighScores();
         }
         else
         {
@@ -27,68 +25,121 @@ public class ScoreManager : MonoBehaviour
     private void Start()
     {
         ResetCurrentScore();
+        InitializeHighScores();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.KeypadMultiply))
+        {
+            PrintHighScores();
+        }
+
+        UpdateHighScores();
     }
 
     public void AddPoints(int points)
     {
-        currentScore += points;
-        if (currentScore > maxScore)
+        score += points;
+        if (score > maxScore)
         {
-            maxScore = currentScore;
+            maxScore = score;
         }
     }
 
     public void ResetCurrentScore()
     {
-        currentScore = 0;
+        score = 0;
     }
 
-    public bool CheckIfHighScore()
+    public void InitializeHighScores()
     {
-        if (highScores.Count < maxHighScores || currentScore > highScores[highScores.Count - 1].score)
+        highScores.Add(new HighScore("UNO", 1500));
+        highScores.Add(new HighScore("SEI", 1000));
+        highScores.Add(new HighScore("DOS", 1400));
+        highScores.Add(new HighScore("CUA", 1200));
+        highScores.Add(new HighScore("CIN", 1100));
+        highScores.Add(new HighScore("TRE", 1300));
+
+        highScores.Sort((a, b) => b.score.CompareTo(a.score));
+
+        string json = JsonUtility.ToJson(new HighScoreListWrapper(highScores));
+        PlayerPrefs.SetString("HighScores", json);
+        PlayerPrefs.Save();
+    }
+
+    public void LoadHighScores()
+    {
+        if (PlayerPrefs.HasKey("HighScores"))
+        {
+            string json = PlayerPrefs.GetString("HighScores");
+            HighScoreListWrapper wrapper = JsonUtility.FromJson<HighScoreListWrapper>(json);
+            highScores = wrapper.highScores;
+        }
+        else
+        {
+            highScores = new List<HighScore>();
+        }
+    }
+    public void PrintHighScores()
+    {
+        foreach (HighScore highScore in highScores)
+        {
+            Debug.Log($"Initials: {highScore.initials}, Score: {highScore.score}");
+        }
+    }
+    public bool IsHighScore(int currentScore)
+    {
+        if (currentScore > highScores[highScores.Count - 1].score)
         {
             return true;
         }
         return false;
     }
 
-    public void AddHighScore(string initials)
+    public void UpdateHighScores()
     {
-        HighScore newScore = new HighScore(initials, currentScore);
-        highScores.Add(newScore);
-        highScores.Sort((a, b) => b.score.CompareTo(a.score));
-
-        if (highScores.Count > maxHighScores)
+        // Verifica si el puntaje actual califica para entrar en la lista
+        if (IsHighScore(score))
         {
-            highScores.RemoveAt(highScores.Count - 1);
-        }
+            highScores.Sort((a, b) => b.score.CompareTo(a.score));
 
-        SaveHighScores();
-    }
-
-    private void LoadHighScores()
-    {
-        highScores.Clear();
-        for (int i = 0; i < maxHighScores; i++)
-        {
-            string initials = PlayerPrefs.GetString($"HS{i}_Initials", "");
-            int score = PlayerPrefs.GetInt($"HS{i}_Score", 0);
-
-            if (!string.IsNullOrEmpty(initials))
+            for (int i = (highScores.Count - 1); i >= 0; i--)
             {
-                highScores.Add(new HighScore(initials, score));
+                if (score > highScores[i].score)
+                {
+                    highScores[i] = new HighScore(highScores[i].initials, highScores[i].score);
+                    highScores.Add(new HighScore("***", score));
+                    highScores.Add(highScores[i]);
+
+                    highScores.Sort((a, b) => b.score.CompareTo(a.score));
+
+                    if (highScores.Count > 5) // Asume que quieres solo los 5 mejores puntajes
+                    {
+                        for (int j = 0; j < (highScores.Count -5); j++)
+                        {
+                            highScores.RemoveAt(highScores.Count - 1); // Elimina el más bajo
+                        }                        
+                    }
+                }
             }
+            // Guarda los puntajes actualizados en PlayerPrefs
+            string json = JsonUtility.ToJson(new HighScoreListWrapper(highScores));
+            PlayerPrefs.SetString("HighScores", json);
+            PlayerPrefs.Save();
         }
     }
 
-    private void SaveHighScores()
+}
+
+[System.Serializable]
+public class HighScoreListWrapper
+{
+    public List<HighScore> highScores;
+
+    public HighScoreListWrapper(List<HighScore> scores)
     {
-        for (int i = 0; i < highScores.Count; i++)
-        {
-            PlayerPrefs.SetString($"HS{i}_Initials", highScores[i].initials);
-            PlayerPrefs.SetInt($"HS{i}_Score", highScores[i].score);
-        }
-        PlayerPrefs.Save();
+        highScores = scores;
     }
 }
 

@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
     [SerializeField] private float reloadSceneTime = 3f;
     [SerializeField] private AudioClip bgMusic;
     [SerializeField] private float bgMusicWait = 0f;
@@ -19,38 +18,43 @@ public class GameManager : MonoBehaviour
     private TextMeshProUGUI lifesText;
     private int score;
     private AudioSource audioSourceMusic;
-    [HideInInspector] public HighScoreManager highScoreManager;
-    private List<ScoreRecord> highScores;
 
     private void Start()
     {
-        audioSourceMusic = GameObject.FindWithTag("AudioSourceMusic").GetComponent<AudioSource>();
-
-        if (GameObject.FindWithTag("ScoreText") == true)
-        {
-            scoreText = GameObject.FindWithTag("ScoreText").GetComponent<TextMeshProUGUI>();
-        }
-        if (GameObject.FindWithTag("TopScoreText"))
-        {
-            topScoreText = GameObject.FindWithTag("TopScoreText").GetComponent<TextMeshProUGUI>();
-        }
-        if (GameObject.FindWithTag("LifesText"))
-        {
-            lifesText = GameObject.FindWithTag("LifesText").GetComponent<TextMeshProUGUI>();
-        }
-
+        audioSourceMusic = GameObject.FindWithTag("AudioSourceMusic").GetComponent<AudioSource>();      
+        scoreText = GameObject.FindWithTag("ScoreText").GetComponent<TextMeshProUGUI>();
+        topScoreText = GameObject.FindWithTag("TopScoreText").GetComponent<TextMeshProUGUI>(); 
+        lifesText = GameObject.FindWithTag("LifesText").GetComponent<TextMeshProUGUI>();
+        
         StartCoroutine(PlayMusic());
+    }
+
+    private void Update()
+    {
+
+        if (scoreText != null)
+        {
+            scoreText.text = "SCORE: " + score;
+        }
+        if (topScoreText != null)
+        {
+            //topScoreText.text = "TOP SCORE: " + topScore;
+        }
+        if (lifesText != null)
+        {
+            lifesText.text = "LIFES: " + lifes;
+        }
     }
     public void EndGame()
     {
-        if (ScoreManager.Instance.CheckIfHighScore())
-        {
-            SceneManager.LoadScene(enterInitialsSceneName);
-        }
-        else
-        {
-            SceneManager.LoadScene(gameOverSceneName);
-        }
+        //if (ScoreManager.Instance.CheckIfHighScore())
+        //{
+        //    SceneManager.LoadScene(enterInitialsSceneName);
+        //}
+        //else
+        //{
+        //    SceneManager.LoadScene(gameOverSceneName);
+        //}
     }
 
     public void RestartGame()
