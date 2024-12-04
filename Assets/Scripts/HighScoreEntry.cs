@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class HighScoreEntry : MonoBehaviour
 {
@@ -23,7 +24,9 @@ public class HighScoreEntry : MonoBehaviour
     private PlayerInput playerInput; // Referencia al sistema de input
     private Vector2 moveInput; // Vector para capturar el input de movimiento
 
-    private float blinkingTime = 0.25f;  //Duración del parpadeo de la inicial seleccionada
+    private float blinkingTime = 0.25f;  // Duración del parpadeo de la inicial seleccionada
+
+    private float loadNextSceneTime = 1f; // Espera para cargar la siguiente escena
 
 
     private void Awake()
@@ -144,7 +147,13 @@ public class HighScoreEntry : MonoBehaviour
 
         Debug.Log("Record entered: " + finalInitials + " " + finalScore);
 
-        // Opcional: Regresar a la escena principal o mostrar la tabla de puntuaciones
-        // SceneManager.LoadScene("HighScoresScene");
+        // Cargar la escena de tabla de puntuaciones
+        StartCoroutine(LoadHighScoresScene());
     }
+    private IEnumerator LoadHighScoresScene()
+    {
+        yield return new WaitForSeconds(loadNextSceneTime);
+        SceneManager.LoadScene("HighScores");
+    }
+
 }

@@ -13,6 +13,7 @@ public class DataManager : MonoBehaviour
     public List<HighScore> highScores = new List<HighScore>();
     [HideInInspector] public int lifes = 3;
     private GameController gameController;
+    private int highScoreQuantity = 6;
 
     private void Awake()
     {
@@ -128,7 +129,7 @@ public class DataManager : MonoBehaviour
 
                     highScores.Sort((a, b) => b.score.CompareTo(a.score));
 
-                    if (highScores.Count > 5) // Asume que quieres solo los 5 mejores puntajes
+                    if (highScores.Count > highScoreQuantity) // Asume que quieres solo los 6 mejores puntajes
                     {
                         for (int j = 0; j < (highScores.Count -5); j++)
                         {
@@ -174,7 +175,19 @@ public class DataManager : MonoBehaviour
 
     public void AddHighScore(HighScore newHighScore)
     {
+        highScores.Add(newHighScore);
 
+        highScores.Sort((a, b) => b.score.CompareTo(a.score));
+
+        if (highScores.Count > highScoreQuantity)
+        {
+            highScores.RemoveAt(highScores.Count - 1); // Elimina el más bajo
+        }
+
+        // Guarda los puntajes actualizados en PlayerPrefs
+        string json = JsonUtility.ToJson(new HighScoreList(highScores));
+        PlayerPrefs.SetString("HighScores", json);
+        PlayerPrefs.Save();
     }
 }
 
