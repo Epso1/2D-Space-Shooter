@@ -136,7 +136,7 @@ public class HighScoreEntry : MonoBehaviour
         // Obtener la puntuación actual del DataManager
         int finalScore = DataManager.Instance.score;
 
-        // Crear un nuevo ScoreRecord con las iniciales y la puntuación
+        // Crear un nuevo HighScore con las iniciales y la puntuación
         HighScore newEntry = new HighScore(finalInitials, finalScore);
 
         // Guardar el nuevo HighScore en la lista de máximas puntuaciones

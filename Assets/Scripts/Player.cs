@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        // Almacenamos el input de movimiento en la variable moveInput
+        // Almacena el input de movimiento en la variable moveInput
         moveInput = playerInput.actions["Move"].ReadValue<Vector2>();
 
         // Animaciones

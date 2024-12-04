@@ -73,7 +73,7 @@ public class DataManager : MonoBehaviour
 
         highScores.Sort((a, b) => b.score.CompareTo(a.score));
 
-        string json = JsonUtility.ToJson(new HighScoreListWrapper(highScores));
+        string json = JsonUtility.ToJson(new HighScoreList(highScores));
         PlayerPrefs.SetString("HighScores", json);
         PlayerPrefs.Save();
         LoadHighScores();
@@ -84,7 +84,7 @@ public class DataManager : MonoBehaviour
         if (PlayerPrefs.HasKey("HighScores"))
         {
             string json = PlayerPrefs.GetString("HighScores");
-            HighScoreListWrapper wrapper = JsonUtility.FromJson<HighScoreListWrapper>(json);
+            HighScoreList wrapper = JsonUtility.FromJson<HighScoreList>(json);
             highScores = wrapper.highScores;
             highScores.Sort((a, b) => b.score.CompareTo(a.score));
             
@@ -138,7 +138,7 @@ public class DataManager : MonoBehaviour
                 }
             }
             // Guarda los puntajes actualizados en PlayerPrefs
-            string json = JsonUtility.ToJson(new HighScoreListWrapper(highScores));
+            string json = JsonUtility.ToJson(new HighScoreList(highScores));
             PlayerPrefs.SetString("HighScores", json);
             PlayerPrefs.Save();
         }
@@ -155,8 +155,6 @@ public class DataManager : MonoBehaviour
             gameController.UpdateScore(score);
             gameController.UpdateLifes(lifes);
         }
-        
-       
     }
 
     private void OnDestroy()
@@ -181,11 +179,11 @@ public class DataManager : MonoBehaviour
 }
 
 [System.Serializable]
-public class HighScoreListWrapper
+public class HighScoreList
 {
     public List<HighScore> highScores;
 
-    public HighScoreListWrapper(List<HighScore> scores)
+    public HighScoreList(List<HighScore> scores)
     {
         highScores = scores;
     }
