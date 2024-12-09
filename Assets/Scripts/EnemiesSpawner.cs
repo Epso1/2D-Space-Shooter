@@ -13,6 +13,7 @@ public class EnemiesSpawner : MonoBehaviour
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private Transform primaryPosition;
     [SerializeField] private Transform secondaryPosition;
+    [SerializeField] private Transform parentTransform;
 
 
     public void SpawnEnemies()
@@ -29,7 +30,7 @@ public class EnemiesSpawner : MonoBehaviour
             {
                 for (int j = 0; j < enemiesQuantity; j++)
                 {
-                    Instantiate(enemyPrefab, primaryPosition.position, Quaternion.identity);
+                    Instantiate(enemyPrefab, primaryPosition.position, Quaternion.identity, parentTransform);
                     yield return new WaitForSeconds(waitNextEnemy);
                 }
                 yield return new WaitForSeconds(primaryWaitNextWave);
@@ -38,7 +39,7 @@ public class EnemiesSpawner : MonoBehaviour
             {
                 for (int j = 0; j < enemiesQuantity; j++)
                 {
-                    Instantiate(enemyPrefab, secondaryPosition.position, Quaternion.identity);
+                    Instantiate(enemyPrefab, secondaryPosition.position, Quaternion.identity, parentTransform);
                     yield return new WaitForSeconds(waitNextEnemy);
                 }
                 yield return new WaitForSeconds(secondaryWaitNextWave);

@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/InitialsEntry.unity
     guid: aa94be45516b3554198ba6208662a238
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
+    path: Assets/Scenes/GameOver01.unity
     guid: d4d51b235643f4f46a556d8ae8d8e90b
   - enabled: 1
     path: Assets/Scenes/TopScores.unity
