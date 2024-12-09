@@ -1,0 +1,4549 @@
+fileFormatVersion: 2
+guid: 14494069710759f49ba3fdab136a3463
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 167
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa9bb4f94349864db577e10f6f26319
+      internalID: 1204848223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 165
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7c3e9dbdf39674bae8b8524a4870fa
+      internalID: 945707804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 167
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e3cbb8bb0b0f644a04681dd219cfff
+      internalID: 388232975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 165
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b4d43d626fa0d42bf61d7eb014b698
+      internalID: -734678021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 167
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8920d9fb7b0846a44bec68ec0c4dbe42
+      internalID: 244369867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_5
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 167
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ab50c38f523654ea895eab921eafaa
+      internalID: -2069797831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_6
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 167
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2175ee9ec2c45434fb8e90bd1ab88e12
+      internalID: -960462628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_7
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 167
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5a4ed445446a945931b7451eb927cb
+      internalID: 2023024874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_8
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 167
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1598e333dbf5e40ba0e801e5b116f3
+      internalID: 1512798526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_9
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 167
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c89ac5e04871145995a64ed852c068
+      internalID: 2141892721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 143
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4d6b071759a19449f45ccf73181b1f
+      internalID: -659154125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_11
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 143
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22aa59ec8560bc04ab19764804db921f
+      internalID: 513188224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_12
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 142
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74954f9fea919a24288fdab1c24ab1a8
+      internalID: 1070157115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_13
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 144
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdff82835336c934688fad775c370a30
+      internalID: -73678046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 144
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f58d41e3bad9a4a9e24436063c0713
+      internalID: -854001974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 144
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9e2ea162b0698488b1d2c09f2feebf
+      internalID: -260775515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_16
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 143
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d237c0aba25ad34fafbe5a2fbc4268d
+      internalID: 2014836997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_17
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 142
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800c782e85c1cda4d852a56341aa1d2d
+      internalID: -1690480307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_18
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 142
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38bb2cca04380f04ea577f724885aeae
+      internalID: 759272725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_19
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 142
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001b9973ef67d5348a5e392c985c970d
+      internalID: -488336257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_20
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 142
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45c161b33f63b34a83ee177ecc73f6e
+      internalID: 1204106492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_21
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 142
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18fa2d3c02aa0145b19f68624651af6
+      internalID: -849471690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_22
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 142
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f786e1702c16247a2fad1ca90bdb6c
+      internalID: -1906867137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66482fae2e25a2a4091f9ce4617a9cc1
+      internalID: 2101314122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_24
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 147
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ddd79cea0e2c34f9b9f467ad561d21
+      internalID: -1246640897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_25
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 144
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151ee5502d13151429895734af9f30e2
+      internalID: -273129817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_26
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 142
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9dc1e6bf07c7574fa1ab68ea9f6ca77
+      internalID: -1822326615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_27
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 146
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d09770f80d7f142abe10aa13b46789
+      internalID: 253852833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_28
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 145
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa857f7e27cb4164ba2f632beb9f72cb
+      internalID: -1493859391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_29
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 143
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6bb3390eee01643b35e81c29929d7e
+      internalID: 73627080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_30
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 142
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811e50eac5c8c6c41801d5feac42265c
+      internalID: -1074839333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_31
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 135
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820bcf13e153ac64a9d964d476c3a1b0
+      internalID: -537688877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c157b64940d8848bb6e3b8f57d8f5b
+      internalID: 1314487795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_33
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 120
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08eb17613326c34aa08cc2aa9c423cc
+      internalID: -1975971962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_34
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 120
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7370c73f2b84ee44cb73f6be21565a38
+      internalID: -659205289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_35
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 121
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b09dbaf8d21894aaff922e75e1cc9e
+      internalID: 1521859256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_36
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 121
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75688d66371715e458745b9bd49d6efd
+      internalID: -1917471532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_37
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 121
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c9f54e9f109f24994971f8238ad05c
+      internalID: 332787349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_38
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 122
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e20b46079457f4194cd0920f41b7dc
+      internalID: 784891359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_39
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 121
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e176062b85fb6e74db6cfe1b014f603f
+      internalID: -1887059665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_40
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 121
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab021db6245ddb43b290e5bb944caf3
+      internalID: -1938107367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_41
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 121
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61de6b5927cd7354398d0d3eb11261d0
+      internalID: 77428152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_42
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 121
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1616f6a8d19c39408fe60fccb3ec3e3
+      internalID: -568912065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_43
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 101
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ec658e438b1e74b89e5867ba92f198
+      internalID: -534986100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_44
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 121
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f88ea09e45bce844856f81ef31ab784
+      internalID: -1106834341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_45
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 121
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8138b3e23b6c149a1379f0de5fbf23
+      internalID: 1822677018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_46
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 124
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa51c7e265ab694782c3ea98fce2b89
+      internalID: -1090005946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_47
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 122
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9fd185941fabe4bbd95feddefba484
+      internalID: 2042286040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_48
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 122
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c76b1062ff38714aa718bcf51e4b65b
+      internalID: 1536853121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_49
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 122
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7697a0c748dc61240b36d6eb964faaa1
+      internalID: 1597981134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_50
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 121
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97e0912b7ea0a84da836e857e7de381
+      internalID: -596587220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_51
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 121
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf31dd38ef4e494fa1a865e4ffc5bb9
+      internalID: -1118127493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_52
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 113
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5887a837a0032be4cb44717a81ada99e
+      internalID: 1814973647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_53
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 101
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c2ab78cd3a3dc4f83d851836f9cc1c
+      internalID: 1284366886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_54
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 101
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e5d5a5941e14642945b279df4f2f6f
+      internalID: 1583589459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_55
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 101
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe59539ea5d40a488ae5a7b78197d5c
+      internalID: 1908335161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_56
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1445d866466395349aea5668df356fd0
+      internalID: -64287119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_57
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b157a7a9a9e3c94ab6f78542fabc249
+      internalID: 495298089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_58
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0222646ce4d1b1e45a0cdeda5daa6654
+      internalID: -717663678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_59
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 101
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47c3f046cd888841b9f5c92c26c63aa
+      internalID: -456259731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_60
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993ad78a2e6eeb84eba2c401e9a78846
+      internalID: -1623866465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_61
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 101
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d147012bbbec1714ba49b2362b5f56e7
+      internalID: -499664881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_62
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 104
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5139667ca6dbc5644a320ae74fc6117d
+      internalID: 1162561707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_63
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 108
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff8279f0a2d08841a1a75c679c1420d
+      internalID: -1826503098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_64
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 101
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3fc0290ef358945835fa4535a09326
+      internalID: -1544152081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_65
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 104
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bc762c4c224b34b8e57a2e70d68c1c
+      internalID: -713883828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_66
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 103
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512a940a8b78708459b45101356813d5
+      internalID: 1829245267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_67
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 102
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b524dea70e5c424ab7e90c9299eb51c
+      internalID: -498071861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_68
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 101
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19319ab401c4eb24c8f44d3e98d474e4
+      internalID: 1623596584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_69
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 103
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fc311d76332be4fba9bc17bb7cd7c3
+      internalID: 337831690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_70
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 88
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361c10d9659cfc74a835121e6a72765f
+      internalID: 696248717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_71
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 88
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ebf60e0072d2348b4efbbf5aab9966
+      internalID: 1855057207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_72
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 88
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d726ca458ef905145afddb7ab2267351
+      internalID: 829434451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_73
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 88
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c0644c9f148944f827f2fb9e633346
+      internalID: 1056854854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_74
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 88
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acfcffa994d0a9419e2fdcd174ad79f
+      internalID: -1920407703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_75
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 88
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e898d7e8fcda5eb40a3dbfbf6977414a
+      internalID: -198954793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_76
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 88
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf6b9bd61dbc1147abc14d97d85794c
+      internalID: 1909073881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_77
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 88
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602e6c39566427e408327e4bb4edd275
+      internalID: -968460632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_78
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 88
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399c78961f41eb642bb71bfe75e6ddbb
+      internalID: -237559141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_79
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 88
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c435d2fa7bf4ff43b879ea488de9b6e
+      internalID: -310354845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_80
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 88
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c002bd9a3f51a604eb20bd37f7d94701
+      internalID: -1331541754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_81
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 69
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f31ccd3e43984644afe6db243437e8f
+      internalID: -168217899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_82
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 69
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0edab40ad2c6334495a25033d2ff3b6
+      internalID: 470213970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_83
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 69
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520cdb992bae67f4aa2e4b247529c42a
+      internalID: 1203834158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_84
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 69
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82763760736c6aa458333d4bbb11832e
+      internalID: 433184517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_85
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 69
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad07c69066e19245948104425f91d6b
+      internalID: -854898761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_86
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 69
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e761f0c4c1cfe3644aec91d7c0aadaa3
+      internalID: 1361160850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_87
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 69
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d682831887d7e741b8a363a4fb8e392
+      internalID: -241755397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_88
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 69
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5ede9e290640a4db893dfc716e07d5
+      internalID: 2047111071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_89
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 69
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c2a7bde43b060429e39450cdc3c9bc
+      internalID: 1447653463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_90
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 69
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc18798df8e802d4ea0908198e624b58
+      internalID: -917256600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_91
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 69
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5051eb61fd786684eac88aa95c4d9780
+      internalID: 1068495821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_92
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 69
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08c0d986b3b33f4982cce5257d1a8e8
+      internalID: -38192119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_93
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 69
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d641a8cbd2801964ca39f8e035427587
+      internalID: 1285320011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_94
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 69
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22fc3fae639a5b409e0e8d07e01f50b
+      internalID: 999173179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_95
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 69
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332982959e1324e4e89b67f457582ee1
+      internalID: -1313190851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_96
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 69
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707b74825840cc34e8b5103bcd4a1a56
+      internalID: -1171864460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_97
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 69
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9321b2844ebc3441abc6b3c9292317b
+      internalID: 1058389327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_98
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 69
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dabeac9d45efdd4a95a53b419e6c3fb
+      internalID: -1052173677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_99
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 69
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cd872d529098241bd6ae766a89d5f8
+      internalID: 1015575399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_100
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e08abaf7c610b4aab66913781d8ebe
+      internalID: 268298755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_101
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 75
+        width: 30
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea4d069ebc1c344aa258c72cc0efb96
+      internalID: -647505872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_102
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 52
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7918c8651d64a3428bc1ebd20a57e07
+      internalID: 2102086745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_103
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 52
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96175930c157504419751e13bdf53438
+      internalID: 543633935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_104
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 52
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a923d8b2aeabc1429e74b4825a3ac53
+      internalID: -1377320113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_105
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 52
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722fac57d499fe84e81b12c89d384377
+      internalID: 1736717993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_106
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 52
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f943b758017434c91081702ffbcb4e
+      internalID: 189530517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_107
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 52
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6854bab7384524097809ec05eb6545
+      internalID: -1950071192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_108
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 52
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f60a5e9cdf4194a93857a59aaaf29e
+      internalID: 1136061788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_109
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 52
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dd3f092dd9cc44c96874830185b402
+      internalID: -1559442041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_110
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 62
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e4268e2157a2940a68d845ac186be1
+      internalID: 1974191331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_111
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 52
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29647f5eed4d4c47b2244dd36823f25
+      internalID: -196236975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_112
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 52
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34efad2898e2548409ba645097997990
+      internalID: -597409225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_113
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 52
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868fd1e2ca84e434795375f1713b495e
+      internalID: 958693552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_114
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 52
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954af99f33c09624296ef2f662d66103
+      internalID: 1331842586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_115
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 52
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f019e320e3df14799e7ab863f35909
+      internalID: 1316297949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_116
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 52
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afe1addbbcb6a040b5c5fb88546da25
+      internalID: -279433989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_117
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 52
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fba4331f9d715747a2656923423263e
+      internalID: -915325379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_118
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 52
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b518739f0308d42bff7d466fc1d5df
+      internalID: -2060688177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_119
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 52
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0457c186308c9d542bfe30d6224295ca
+      internalID: 1447341043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_120
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 52
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1371d38ee6217ee4f982d495ccd98f9a
+      internalID: 1444374916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_121
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 52
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22f1ee5b06672e4ea20e599e3a32386
+      internalID: -369879787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_122
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 52
+        width: 27
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579cb460a21a9574db776263e1651dfb
+      internalID: 1039137828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_123
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 30
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e02c2c66c500bf4bb567ee81eead659
+      internalID: 1610059419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_124
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 30
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6d6cadbd40c7f4aa72fb0f6b8f15eb
+      internalID: 1481385670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_125
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 30
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d75e3ac65eeaf8478f5240ab7b1269c
+      internalID: 485619865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_126
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 30
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75cabc166ac3e7448a327328d7de9b8e
+      internalID: 814939184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_127
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 30
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be37899d8cb363447ae2cc3ccecca353
+      internalID: 1882160704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_128
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 30
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086006b9dc81d114f9b24b1d6563bf41
+      internalID: 1795253032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_129
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 30
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99465a42c5619c42bd77d7b258d5564
+      internalID: 411154396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_130
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 30
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87c7e73dff30f6479ae0c79003d8e0e
+      internalID: -2116076419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_131
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 39
+        width: 27
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0602acabaa4474f479d1478fd35c20a6
+      internalID: -1679952916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_132
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 30
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3cd6b57a22c57147a38b58715e5352b
+      internalID: -1691210207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_133
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 29
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90d971806a7cb944eb179e8685cdf53d
+      internalID: 1782564269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_134
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 39
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5776806514f4e364e89e3f5a68744afd
+      internalID: 431540832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_135
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 41
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b27a31ccd44ae4a845879bb81060a8
+      internalID: -1311312988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_136
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 29
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f3da718aa02204dbbd1549e3b57d04
+      internalID: 1057275945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_137
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 29
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea52b7cd4a71b14d980117e57d92d94
+      internalID: 696985327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_138
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 33
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3f45d4a9a0f984c98e5d0df5762d37
+      internalID: 278637742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_139
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 33
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a3ff714c191ec4989eb53f7bc54b62
+      internalID: -968779189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_140
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 18
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f486deee3be6fa44b9bf3fd0500045d
+      internalID: 2113905937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_141
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 18
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caea4dddbc059f6498469b7b3ffc96a8
+      internalID: 914919657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_142
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8f72afae170d64782456a58e2e659d
+      internalID: -1733745422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_143
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 18
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbe9d9146c329546a810c317e575102
+      internalID: 773461801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_144
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e7f90e99d09f84384af48d75586323
+      internalID: 146193939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_145
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b43208ee4b03741b3054b3d233af3c
+      internalID: 1153328382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_146
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 18
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f294742dbddce544b195f6855d3d6d4
+      internalID: 1744577192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_147
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaaae4d612baa05419225d5d5a8e909a
+      internalID: 1317938039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_148
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50a3f7e2ae755b47aaaba14140c3631
+      internalID: -248931044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_149
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 18
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae508e8b73a86545afb260700d25fc3
+      internalID: -1769140331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_150
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ecdb3708f424f4d911b784c665321b
+      internalID: 839611537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_151
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 18
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219edb8b0c5a3af4db80d3f53e0fe2b3
+      internalID: 849295472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_152
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 18
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921280b98bfc9e240919eb0088027c7e
+      internalID: -1386339443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_153
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 18
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4fcc35927f7d2499e19f341875d2ed
+      internalID: 359429423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_154
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 18
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06da4fdb29be2748885d88a5fc16392
+      internalID: 2139542290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_155
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53287c86b0255714b8f45ed1221a97dc
+      internalID: 1548094087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_156
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 18
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85406c94627f9d41ba08e9dc8a691a5
+      internalID: -218180909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_157
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 18
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1be87d56e1bcb44c9dbdfee3e9a4cbf
+      internalID: -1991090001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_158
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 16
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e89b0c3f18d5b4d8df72c32d5e9e8a
+      internalID: 1607778575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_159
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 16
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ffafc421953aa24790be973b4470eef
+      internalID: 797095132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_160
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17b077b374b8df749a84e12276f2fa5f
+      internalID: -83857096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_161
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 18
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0cf9fb119f853488fb8069748536b4
+      internalID: 1441963686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_162
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 18
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8303fea08aa497f4084f25f7d70e8a5c
+      internalID: 738788109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_163
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 16
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce4a9b1b3d0e7742a5ed5aa047edb5c
+      internalID: -92295753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_164
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 18
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6610e0ae3f63b646b75a806ce87228a
+      internalID: 831294659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_165
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 17
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aae31e600e23774ea1d71fee9f8c5ae
+      internalID: 737478184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_166
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c75e15efcaa594587bf2cabc24c833
+      internalID: -1921778927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_167
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34e8f32ce7954648ace5fcf503386ef
+      internalID: 948692013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_168
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 16
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d88af810efc314592b4dd0aecb95c6
+      internalID: -472044974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_169
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 18
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a7ab76392af41448ef943306a9ec47
+      internalID: 998508056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_170
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 18
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc01371084ead543a3df952b061c3f6
+      internalID: -1526230956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_171
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e95aeface73cdc4e9c5328cac3d08ed
+      internalID: -1115091708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_172
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 18
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca41910414a68a4eb45d216708ed4c6
+      internalID: 1553769741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_173
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 7
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf7e2db6007ca041be5425c53a4a13b
+      internalID: -1574434506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_174
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f0ce475a2879d4dada599ff9f13ed0
+      internalID: 2081991558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_175
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 5
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5e0d255c06afd459eea257b8a1f3ed
+      internalID: -909047857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_176
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 5
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67cccb3d09157704798eff721da9a371
+      internalID: -1270727588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_177
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 5
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b055ed671af524b4680966a884d17903
+      internalID: 1472636760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_178
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 7
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec201b29ecb0f7418a74c577e0811c9
+      internalID: 905230422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_179
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 7
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8496d3095a4655418534c184272f5f6
+      internalID: 1889938084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_180
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 7
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c62521995a089f4b9a5d6f6a690b8a5
+      internalID: 30656448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_181
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e721aa02fdbcd7469207d969acd8c61
+      internalID: -202899474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_182
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7990ab6d10ec74caa7725db17eae04
+      internalID: 1991754296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_183
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67baec36e53efdd49aa2f1e4a9a78470
+      internalID: 1905339119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_184
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 7
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40248c493e4c90c439cbfcf2cd10ef63
+      internalID: -322865084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_185
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 7
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f127ee7744936e544b71a39fe1fa1a29
+      internalID: 55175757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_186
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 7
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d3ae8e4f16d5c4d82c2a189ed6c901
+      internalID: 139453276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_187
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 7
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434ccd43e150c9b47a26e4336b88d283
+      internalID: 316900839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_188
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 7
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15124af0207b8d7408fab2000569a0ff
+      internalID: 161008423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_189
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdce8c52def34148b2f5e5ea33f8b62
+      internalID: -444075873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_190
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9e1a30b4766004cbbe7f9b14019d8f
+      internalID: 919534059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_191
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4774c5b732490447b6a6057242d0707
+      internalID: -985208705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_192
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 7
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbce8a3a15a3974f8bc27c9a1f8ba0f
+      internalID: -1415398301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_193
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b1f68e28ecb734780ad87309734798
+      internalID: -203367425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_194
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd325f5b66ea950438ebd2452a3c8007
+      internalID: -1888912017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_195
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57d1729a44176c49b81b693d29db0c0
+      internalID: -487731834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_196
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4902ba9a0aae6ae4d8791bb17aa11074
+      internalID: 62744994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_197
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea0c1bab0485fc4fb3efa28a9f4cd2c
+      internalID: -1554730275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_198
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84fcecae5d3c7e4185d5dca18e33d66
+      internalID: -369206247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_199
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 7
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0584be35c4e2d57449267274dca680f9
+      internalID: 844253717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Small Enemies_200
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 5
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414269fd96a626f4d850602163e3a64f
+      internalID: 1719207298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arcade - Gradius - Small Enemies_0: 1204848223
+      Arcade - Gradius - Small Enemies_1: 945707804
+      Arcade - Gradius - Small Enemies_10: -659154125
+      Arcade - Gradius - Small Enemies_100: 268298755
+      Arcade - Gradius - Small Enemies_101: -647505872
+      Arcade - Gradius - Small Enemies_102: 2102086745
+      Arcade - Gradius - Small Enemies_103: 543633935
+      Arcade - Gradius - Small Enemies_104: -1377320113
+      Arcade - Gradius - Small Enemies_105: 1736717993
+      Arcade - Gradius - Small Enemies_106: 189530517
+      Arcade - Gradius - Small Enemies_107: -1950071192
+      Arcade - Gradius - Small Enemies_108: 1136061788
+      Arcade - Gradius - Small Enemies_109: -1559442041
+      Arcade - Gradius - Small Enemies_11: 513188224
+      Arcade - Gradius - Small Enemies_110: 1974191331
+      Arcade - Gradius - Small Enemies_111: -196236975
+      Arcade - Gradius - Small Enemies_112: -597409225
+      Arcade - Gradius - Small Enemies_113: 958693552
+      Arcade - Gradius - Small Enemies_114: 1331842586
+      Arcade - Gradius - Small Enemies_115: 1316297949
+      Arcade - Gradius - Small Enemies_116: -279433989
+      Arcade - Gradius - Small Enemies_117: -915325379
+      Arcade - Gradius - Small Enemies_118: -2060688177
+      Arcade - Gradius - Small Enemies_119: 1447341043
+      Arcade - Gradius - Small Enemies_12: 1070157115
+      Arcade - Gradius - Small Enemies_120: 1444374916
+      Arcade - Gradius - Small Enemies_121: -369879787
+      Arcade - Gradius - Small Enemies_122: 1039137828
+      Arcade - Gradius - Small Enemies_123: 1610059419
+      Arcade - Gradius - Small Enemies_124: 1481385670
+      Arcade - Gradius - Small Enemies_125: 485619865
+      Arcade - Gradius - Small Enemies_126: 814939184
+      Arcade - Gradius - Small Enemies_127: 1882160704
+      Arcade - Gradius - Small Enemies_128: 1795253032
+      Arcade - Gradius - Small Enemies_129: 411154396
+      Arcade - Gradius - Small Enemies_13: -73678046
+      Arcade - Gradius - Small Enemies_130: -2116076419
+      Arcade - Gradius - Small Enemies_131: -1679952916
+      Arcade - Gradius - Small Enemies_132: -1691210207
+      Arcade - Gradius - Small Enemies_133: 1782564269
+      Arcade - Gradius - Small Enemies_134: 431540832
+      Arcade - Gradius - Small Enemies_135: -1311312988
+      Arcade - Gradius - Small Enemies_136: 1057275945
+      Arcade - Gradius - Small Enemies_137: 696985327
+      Arcade - Gradius - Small Enemies_138: 278637742
+      Arcade - Gradius - Small Enemies_139: -968779189
+      Arcade - Gradius - Small Enemies_14: -854001974
+      Arcade - Gradius - Small Enemies_140: 2113905937
+      Arcade - Gradius - Small Enemies_141: 914919657
+      Arcade - Gradius - Small Enemies_142: -1733745422
+      Arcade - Gradius - Small Enemies_143: 773461801
+      Arcade - Gradius - Small Enemies_144: 146193939
+      Arcade - Gradius - Small Enemies_145: 1153328382
+      Arcade - Gradius - Small Enemies_146: 1744577192
+      Arcade - Gradius - Small Enemies_147: 1317938039
+      Arcade - Gradius - Small Enemies_148: -248931044
+      Arcade - Gradius - Small Enemies_149: -1769140331
+      Arcade - Gradius - Small Enemies_15: -260775515
+      Arcade - Gradius - Small Enemies_150: 839611537
+      Arcade - Gradius - Small Enemies_151: 849295472
+      Arcade - Gradius - Small Enemies_152: -1386339443
+      Arcade - Gradius - Small Enemies_153: 359429423
+      Arcade - Gradius - Small Enemies_154: 2139542290
+      Arcade - Gradius - Small Enemies_155: 1548094087
+      Arcade - Gradius - Small Enemies_156: -218180909
+      Arcade - Gradius - Small Enemies_157: -1991090001
+      Arcade - Gradius - Small Enemies_158: 1607778575
+      Arcade - Gradius - Small Enemies_159: 797095132
+      Arcade - Gradius - Small Enemies_16: 2014836997
+      Arcade - Gradius - Small Enemies_160: -83857096
+      Arcade - Gradius - Small Enemies_161: 1441963686
+      Arcade - Gradius - Small Enemies_162: 738788109
+      Arcade - Gradius - Small Enemies_163: -92295753
+      Arcade - Gradius - Small Enemies_164: 831294659
+      Arcade - Gradius - Small Enemies_165: 737478184
+      Arcade - Gradius - Small Enemies_166: -1921778927
+      Arcade - Gradius - Small Enemies_167: 948692013
+      Arcade - Gradius - Small Enemies_168: -472044974
+      Arcade - Gradius - Small Enemies_169: 998508056
+      Arcade - Gradius - Small Enemies_17: -1690480307
+      Arcade - Gradius - Small Enemies_170: -1526230956
+      Arcade - Gradius - Small Enemies_171: -1115091708
+      Arcade - Gradius - Small Enemies_172: 1553769741
+      Arcade - Gradius - Small Enemies_173: -1574434506
+      Arcade - Gradius - Small Enemies_174: 2081991558
+      Arcade - Gradius - Small Enemies_175: -909047857
+      Arcade - Gradius - Small Enemies_176: -1270727588
+      Arcade - Gradius - Small Enemies_177: 1472636760
+      Arcade - Gradius - Small Enemies_178: 905230422
+      Arcade - Gradius - Small Enemies_179: 1889938084
+      Arcade - Gradius - Small Enemies_18: 759272725
+      Arcade - Gradius - Small Enemies_180: 30656448
+      Arcade - Gradius - Small Enemies_181: -202899474
+      Arcade - Gradius - Small Enemies_182: 1991754296
+      Arcade - Gradius - Small Enemies_183: 1905339119
+      Arcade - Gradius - Small Enemies_184: -322865084
+      Arcade - Gradius - Small Enemies_185: 55175757
+      Arcade - Gradius - Small Enemies_186: 139453276
+      Arcade - Gradius - Small Enemies_187: 316900839
+      Arcade - Gradius - Small Enemies_188: 161008423
+      Arcade - Gradius - Small Enemies_189: -444075873
+      Arcade - Gradius - Small Enemies_19: -488336257
+      Arcade - Gradius - Small Enemies_190: 919534059
+      Arcade - Gradius - Small Enemies_191: -985208705
+      Arcade - Gradius - Small Enemies_192: -1415398301
+      Arcade - Gradius - Small Enemies_193: -203367425
+      Arcade - Gradius - Small Enemies_194: -1888912017
+      Arcade - Gradius - Small Enemies_195: -487731834
+      Arcade - Gradius - Small Enemies_196: 62744994
+      Arcade - Gradius - Small Enemies_197: -1554730275
+      Arcade - Gradius - Small Enemies_198: -369206247
+      Arcade - Gradius - Small Enemies_199: 844253717
+      Arcade - Gradius - Small Enemies_2: 388232975
+      Arcade - Gradius - Small Enemies_20: 1204106492
+      Arcade - Gradius - Small Enemies_200: 1719207298
+      Arcade - Gradius - Small Enemies_21: -849471690
+      Arcade - Gradius - Small Enemies_22: -1906867137
+      Arcade - Gradius - Small Enemies_23: 2101314122
+      Arcade - Gradius - Small Enemies_24: -1246640897
+      Arcade - Gradius - Small Enemies_25: -273129817
+      Arcade - Gradius - Small Enemies_26: -1822326615
+      Arcade - Gradius - Small Enemies_27: 253852833
+      Arcade - Gradius - Small Enemies_28: -1493859391
+      Arcade - Gradius - Small Enemies_29: 73627080
+      Arcade - Gradius - Small Enemies_3: -734678021
+      Arcade - Gradius - Small Enemies_30: -1074839333
+      Arcade - Gradius - Small Enemies_31: -537688877
+      Arcade - Gradius - Small Enemies_32: 1314487795
+      Arcade - Gradius - Small Enemies_33: -1975971962
+      Arcade - Gradius - Small Enemies_34: -659205289
+      Arcade - Gradius - Small Enemies_35: 1521859256
+      Arcade - Gradius - Small Enemies_36: -1917471532
+      Arcade - Gradius - Small Enemies_37: 332787349
+      Arcade - Gradius - Small Enemies_38: 784891359
+      Arcade - Gradius - Small Enemies_39: -1887059665
+      Arcade - Gradius - Small Enemies_4: 244369867
+      Arcade - Gradius - Small Enemies_40: -1938107367
+      Arcade - Gradius - Small Enemies_41: 77428152
+      Arcade - Gradius - Small Enemies_42: -568912065
+      Arcade - Gradius - Small Enemies_43: -534986100
+      Arcade - Gradius - Small Enemies_44: -1106834341
+      Arcade - Gradius - Small Enemies_45: 1822677018
+      Arcade - Gradius - Small Enemies_46: -1090005946
+      Arcade - Gradius - Small Enemies_47: 2042286040
+      Arcade - Gradius - Small Enemies_48: 1536853121
+      Arcade - Gradius - Small Enemies_49: 1597981134
+      Arcade - Gradius - Small Enemies_5: -2069797831
+      Arcade - Gradius - Small Enemies_50: -596587220
+      Arcade - Gradius - Small Enemies_51: -1118127493
+      Arcade - Gradius - Small Enemies_52: 1814973647
+      Arcade - Gradius - Small Enemies_53: 1284366886
+      Arcade - Gradius - Small Enemies_54: 1583589459
+      Arcade - Gradius - Small Enemies_55: 1908335161
+      Arcade - Gradius - Small Enemies_56: -64287119
+      Arcade - Gradius - Small Enemies_57: 495298089
+      Arcade - Gradius - Small Enemies_58: -717663678
+      Arcade - Gradius - Small Enemies_59: -456259731
+      Arcade - Gradius - Small Enemies_6: -960462628
+      Arcade - Gradius - Small Enemies_60: -1623866465
+      Arcade - Gradius - Small Enemies_61: -499664881
+      Arcade - Gradius - Small Enemies_62: 1162561707
+      Arcade - Gradius - Small Enemies_63: -1826503098
+      Arcade - Gradius - Small Enemies_64: -1544152081
+      Arcade - Gradius - Small Enemies_65: -713883828
+      Arcade - Gradius - Small Enemies_66: 1829245267
+      Arcade - Gradius - Small Enemies_67: -498071861
+      Arcade - Gradius - Small Enemies_68: 1623596584
+      Arcade - Gradius - Small Enemies_69: 337831690
+      Arcade - Gradius - Small Enemies_7: 2023024874
+      Arcade - Gradius - Small Enemies_70: 696248717
+      Arcade - Gradius - Small Enemies_71: 1855057207
+      Arcade - Gradius - Small Enemies_72: 829434451
+      Arcade - Gradius - Small Enemies_73: 1056854854
+      Arcade - Gradius - Small Enemies_74: -1920407703
+      Arcade - Gradius - Small Enemies_75: -198954793
+      Arcade - Gradius - Small Enemies_76: 1909073881
+      Arcade - Gradius - Small Enemies_77: -968460632
+      Arcade - Gradius - Small Enemies_78: -237559141
+      Arcade - Gradius - Small Enemies_79: -310354845
+      Arcade - Gradius - Small Enemies_8: 1512798526
+      Arcade - Gradius - Small Enemies_80: -1331541754
+      Arcade - Gradius - Small Enemies_81: -168217899
+      Arcade - Gradius - Small Enemies_82: 470213970
+      Arcade - Gradius - Small Enemies_83: 1203834158
+      Arcade - Gradius - Small Enemies_84: 433184517
+      Arcade - Gradius - Small Enemies_85: -854898761
+      Arcade - Gradius - Small Enemies_86: 1361160850
+      Arcade - Gradius - Small Enemies_87: -241755397
+      Arcade - Gradius - Small Enemies_88: 2047111071
+      Arcade - Gradius - Small Enemies_89: 1447653463
+      Arcade - Gradius - Small Enemies_9: 2141892721
+      Arcade - Gradius - Small Enemies_90: -917256600
+      Arcade - Gradius - Small Enemies_91: 1068495821
+      Arcade - Gradius - Small Enemies_92: -38192119
+      Arcade - Gradius - Small Enemies_93: 1285320011
+      Arcade - Gradius - Small Enemies_94: 999173179
+      Arcade - Gradius - Small Enemies_95: -1313190851
+      Arcade - Gradius - Small Enemies_96: -1171864460
+      Arcade - Gradius - Small Enemies_97: 1058389327
+      Arcade - Gradius - Small Enemies_98: -1052173677
+      Arcade - Gradius - Small Enemies_99: 1015575399
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

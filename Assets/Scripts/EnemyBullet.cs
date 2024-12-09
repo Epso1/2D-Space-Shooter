@@ -13,6 +13,7 @@ public class EnemyBullet : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         audioSourceFX3 = GameObject.FindWithTag("AudioSourceFX3").GetComponent<AudioSource>();
+        direction = Vector2.left;
     }
 
     private void Start()
@@ -35,5 +36,9 @@ public class EnemyBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 }

@@ -7,7 +7,6 @@ public class HighscoreTable : MonoBehaviour
 {
     [SerializeField] private Transform entryContainer;
     [SerializeField] private Transform entryTemplate;
-    private int topScores = 6;
     [SerializeField] private float templateHeight = 40f;
 
     private List<HighScore> highscoreEntryList;

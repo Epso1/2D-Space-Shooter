@@ -1,62 +1,110 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.Windows;
-using static UnityEditor.Timeline.TimelinePlaybackControls;
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] private AudioSource UIAudioSource;
     [SerializeField] private AudioClip startGameSFX;
-    [SerializeField] private string scene01Name = "Scene01";    
+    [SerializeField] private string scene01Name = "Scene01";
+    [SerializeField] private string topScoresSceneName = "TopScores";
     [SerializeField] private Button[] buttons; // Lista de botones en el menú
     [SerializeField] private AudioClip changeSelectionSFX;
+
+    private Color color0, color1, color2;   
     private int selectedIndex = 0; // Índice del botón seleccionado
-    private PlayerInput playerInput;
-    private bool canChangeSelection = true;
+
     private void Awake()
     {
-        playerInput = GetComponent<PlayerInput>();
+        color2 = new Color(.784f, .784f, .784f);
+        color1 = Color.white;
+        color0 = Color.white;
+        color0.a = 0f;
+    }
+    private void Start()
+    {        
+        UpdateSelection();
     }
     private void Update()
     {
-        Vector2 input = playerInput.actions["Navigate"].ReadValue<Vector2>();
+        
+    }
 
-        if (input.y > 0)
-        {
-            ChangeSelection(-1); // Arriba
+    public void Move(InputAction.CallbackContext context)
+    {
+        Vector2 input = context.ReadValue<Vector2>();
+        if (context.performed)
+        {          
+            if (input.y > 0.5f)
+            {
+                ChangeSelection(-1); // Arriba
+            }
+            else if (input.y < -0.5f)
+            {
+                ChangeSelection(1); // Abajo
+            }
         }
-        else if (input.y < 0)
+        
+    }
+    private void UpdateSelection()
+    {
+        foreach (Button button in buttons)
         {
-            ChangeSelection(1); // Abajo
+            var images = button.GetComponentsInChildren<Image>();
+            images[1].color = color0;
         }
+
+        var images2 = buttons[selectedIndex].GetComponentsInChildren<Image>();
+        images2[1].color = color1;
     }
 
     private void ChangeSelection(int direction)
     {
         // Cambia el índice del botón seleccionado
         selectedIndex = (selectedIndex + direction + buttons.Length) % buttons.Length;
+        UIAudioSource.PlayOneShot(changeSelectionSFX);
+        UpdateSelection();
     }
     public void Submit(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
+            buttons[selectedIndex].GetComponent<Image>().color = color2;
             buttons[selectedIndex].onClick.Invoke();
         }              
     }
 
     public void StartGame()
     {
-        StartCoroutine(StarGameEnum());
+        StartCoroutine(StartGameEnum());
     }
 
-    private IEnumerator StarGameEnum()
+    private IEnumerator StartGameEnum()
     {
         UIAudioSource.clip = startGameSFX;
         UIAudioSource.Play();
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
 
         SceneManager.LoadScene(scene01Name);
+    }
+
+    public void ToTopScores()
+    {
+        StartCoroutine(ToTopScoresEnum());
+    }
+
+    private IEnumerator ToTopScoresEnum()
+    {
+        
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.LoadScene(topScoresSceneName);
+    }
+
+    public void ApplicationQuit()
+    {
+        Application.Quit();
     }
 }

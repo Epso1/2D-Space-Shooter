@@ -5,10 +5,11 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private GameObject explosionPrefab;
-    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] protected GameObject bulletPrefab;
+    [SerializeField] private bool isRandomShotTime;
     [SerializeField] private float minWaitToShoot = 0.2f;
     [SerializeField] private float maxWaitToShoot = 2f;
-    [SerializeField] private Transform bulletOrigin;
+    [SerializeField] protected Transform bulletOrigin;
     [SerializeField] private int pointsWhenDies = 50;
     protected Transform player;
     protected Rigidbody2D rb;
@@ -53,8 +54,12 @@ public class Enemy : MonoBehaviour
     // Dispara, después de un tiempo aleatorio, en la dirección del jugador
     private IEnumerator Shoot()
     {
-        float randomWaitTime = Random.Range(minWaitToShoot, maxWaitToShoot);
-        yield return new WaitForSeconds(randomWaitTime);
+        if (isRandomShotTime)
+        {
+            float randomWaitTime = Random.Range(minWaitToShoot, maxWaitToShoot);
+            yield return new WaitForSeconds(randomWaitTime);
+        }
+        
         if (player != null)
         {
             Vector3 shotDirection = (player.position - transform.position).normalized;
@@ -79,8 +84,12 @@ public class Enemy : MonoBehaviour
 
         // Deshabilita el Collider inicialmente para que no reciba disparos antes de ser visible
         circleCollider.enabled = false;
-
-        // Inicia la corrutina de disparo        
-        StartCoroutine(Shoot());
+        
+        if (isRandomShotTime)
+        {
+            // Inicia la corrutina de disparo        
+            StartCoroutine(Shoot());
+        }
+        
     }
 }

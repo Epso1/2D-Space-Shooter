@@ -2,76 +2,68 @@
 using UnityEngine.InputSystem;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class HighScoreEntry : MonoBehaviour
 {
-    public TMPro.TextMeshProUGUI casilla1;
-    public TMPro.TextMeshProUGUI casilla2;
-    public TMPro.TextMeshProUGUI casilla3;
+    [SerializeField] private string topScoresSceneName = "TopScores";
+    [SerializeField] private TMPro.TextMeshProUGUI casilla1;
+    [SerializeField] private TMPro.TextMeshProUGUI casilla2;
+    [SerializeField] private TMPro.TextMeshProUGUI casilla3;
+    [SerializeField] private Button doneButton; // Referencia al botón "Done"
+    [SerializeField] private GameObject selectionFrame;
 
     // Array de caracteres que incluye letras y símbolos
     private char[] availableCharacters =
     {
         'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
         'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
-        '?', '!', '$', '&', '+', '-', '@', '♥'
+        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+        '?', '!', '$', '&', '#', '+', '-'
     };
 
     private char[] initials = { 'A', 'A', 'A' }; // Iniciales por defecto
-    private int currentIndex = 0; // Índice de la casilla seleccionada
+    private int currentIndex = 0; // Índice de la casilla seleccionada (0-3, donde 3 es el botón Done)
     private Coroutine blinkCoroutine; // Corrutina para controlar el parpadeo
 
-    private PlayerInput playerInput; // Referencia al sistema de input
+
     private Vector2 moveInput; // Vector para capturar el input de movimiento
-
     private float blinkingTime = 0.25f;  // Duración del parpadeo de la inicial seleccionada
-
     private float loadNextSceneTime = 1f; // Espera para cargar la siguiente escena
-
-
-    private void Awake()
-    {
-        // Inicializar PlayerInput y asignar el callback de movimiento
-        playerInput = GetComponent<PlayerInput>();
-
-    }
 
     private void Start()
     {
+        selectionFrame.SetActive(false);
         StartBlinking();
     }
 
-    private void OnMove(InputAction.CallbackContext context)
+    public void Move(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
 
         if (context.performed)
         {
-            if (moveInput.x > 0.5f) // Mover a la derecha
+            if (Mathf.Abs(moveInput.x) > 0.5f) // Mover horizontalmente
             {
                 EnsureVisibilityBeforeSwitch();
-                currentIndex = (currentIndex + 1) % 3;
-                StartBlinking();
-                UpdateDisplay();
-            }
-            else if (moveInput.x < -0.5f) // Mover a la izquierda
-            {
-                EnsureVisibilityBeforeSwitch();
-                currentIndex = (currentIndex - 1 + 3) % 3;
+                currentIndex = (currentIndex + (moveInput.x > 0 ? 1 : -1) + 4) % 4; // Ajustar índice
                 StartBlinking();
                 UpdateDisplay();
             }
 
-            if (moveInput.y > 0.5f) // Subir la letra/símbolo
+            if (currentIndex < 3 && Mathf.Abs(moveInput.y) > 0.5f) // Navegación vertical en las iniciales
             {
-                initials[currentIndex] = GetNextCharacter(initials[currentIndex], 1);
+                initials[currentIndex] = GetNextCharacter(initials[currentIndex], moveInput.y > 0 ? 1 : -1);
                 UpdateDisplay();
             }
-            else if (moveInput.y < -0.5f) // Bajar la letra/símbolo
-            {
-                initials[currentIndex] = GetNextCharacter(initials[currentIndex], -1);
-                UpdateDisplay();
-            }
+        }
+    }
+
+    public void Done(InputAction.CallbackContext context)
+    {
+        if (context.performed && currentIndex == 3) // Botón Done seleccionado
+        {
+            SaveInitials();
         }
     }
 
@@ -88,28 +80,50 @@ public class HighScoreEntry : MonoBehaviour
 
     private void EnsureVisibilityBeforeSwitch()
     {
-        // Asegurarse de que la casilla actual esté visible antes de cambiar de casilla
-        GetSelectedText().enabled = true;
+        if (currentIndex < 3)
+        {
+            // Asegurarse de que la casilla actual esté visible antes de cambiar de casilla
+            SetAlpha(GetSelectedText(), 1f);
+        }
     }
 
     private void StartBlinking()
     {
-        // Detener cualquier parpadeo activo
         if (blinkCoroutine != null)
         {
             StopCoroutine(blinkCoroutine);
         }
-        blinkCoroutine = StartCoroutine(BlinkSelected());
+
+        if (currentIndex < 3) // Las iniciales parpadean
+        {
+            selectionFrame.SetActive(false);
+            blinkCoroutine = StartCoroutine(BlinkSelected());
+        }
+        else
+        {
+            selectionFrame.SetActive(true);
+        }
     }
 
     private IEnumerator BlinkSelected()
     {
+        TMPro.TextMeshProUGUI selectedText = GetSelectedText();
         while (true)
         {
-            GetSelectedText().enabled = false; // Apagar la visibilidad
+            SetAlpha(selectedText, 0f); // Hacer el texto completamente transparente
             yield return new WaitForSeconds(blinkingTime); // Esperar
-            GetSelectedText().enabled = true; // Encender la visibilidad
+            SetAlpha(selectedText, 1f); // Hacer el texto completamente visible
             yield return new WaitForSeconds(blinkingTime); // Esperar
+        }
+    }
+
+    private void SetAlpha(TMPro.TextMeshProUGUI text, float alpha)
+    {
+        if (text != null)
+        {
+            Color color = text.color;
+            color.a = alpha;
+            text.color = color;
         }
     }
 
@@ -120,7 +134,7 @@ public class HighScoreEntry : MonoBehaviour
             case 0: return casilla1;
             case 1: return casilla2;
             case 2: return casilla3;
-            default: return casilla1;
+            default: return null; // Ninguna casilla para el botón Done
         }
     }
 
@@ -129,13 +143,18 @@ public class HighScoreEntry : MonoBehaviour
         casilla1.text = initials[0].ToString();
         casilla2.text = initials[1].ToString();
         casilla3.text = initials[2].ToString();
+
+        if (currentIndex == 3) // Indicar selección del botón Done
+        {
+            doneButton.Select();
+        }
     }
 
     public void SaveInitials()
     {
         // Convertir las iniciales a un string
         string finalInitials = new string(initials);
-       
+
         // Obtener la puntuación actual del DataManager
         int finalScore = DataManager.Instance.score;
 
@@ -150,10 +169,10 @@ public class HighScoreEntry : MonoBehaviour
         // Cargar la escena de tabla de puntuaciones
         StartCoroutine(LoadHighScoresScene());
     }
+
     private IEnumerator LoadHighScoresScene()
     {
         yield return new WaitForSeconds(loadNextSceneTime);
-        SceneManager.LoadScene("HighScores");
+        SceneManager.LoadScene(topScoresSceneName);
     }
-
 }

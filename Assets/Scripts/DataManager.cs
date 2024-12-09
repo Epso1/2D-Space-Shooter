@@ -8,7 +8,7 @@ public class DataManager : MonoBehaviour
     private static DataManager instance; // Singleton para acceso global
 
     public static DataManager Instance { get { return instance; } }
-    [HideInInspector] public int score = 0;
+    public int score = 0;
     private int topScore;
     public List<HighScore> highScores = new List<HighScore>();
     [HideInInspector] public int lifes = 3;
@@ -39,12 +39,15 @@ public class DataManager : MonoBehaviour
         {
             PrintHighScores();
         }
-
-        if (score > topScore)
+        if (gameController != null)
         {
-            topScore = score;
-            gameController.UpdateTopScore(topScore);
+            if (score > topScore)
+            {
+                topScore = score;
+                gameController.UpdateTopScore(topScore);
+            }
         }
+        
     }
 
     public void AddPoints(int points)
@@ -87,8 +90,7 @@ public class DataManager : MonoBehaviour
             string json = PlayerPrefs.GetString("HighScores");
             HighScoreList wrapper = JsonUtility.FromJson<HighScoreList>(json);
             highScores = wrapper.highScores;
-            highScores.Sort((a, b) => b.score.CompareTo(a.score));
-            
+            highScores.Sort((a, b) => b.score.CompareTo(a.score));            
         }
         else
         {

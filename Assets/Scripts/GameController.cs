@@ -2,14 +2,12 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class GameController : MonoBehaviour
 {
     [SerializeField] private float reloadSceneTime = 3f;
     [SerializeField] private AudioClip bgMusic;
+    [SerializeField] private AudioClip bossMusic;
     [SerializeField] private float bgMusicWait = 0f;
     [SerializeField] private string gameOverSceneName = "GameOver";
     [SerializeField] private string enterInitialsSceneName = "EnterInitials";
@@ -96,5 +94,27 @@ public class GameController : MonoBehaviour
         }
       
         lifesText.text = "LIFES: " + currentLifes;
+    }
+
+    public void FadeOutMusic()
+    {
+        StartCoroutine(FadeOutMusicEnum());
+    }
+    public IEnumerator FadeOutMusicEnum()
+    {
+        while (audioSourceMusic.volume > 0)
+        {
+            audioSourceMusic.volume -= 0.01f;
+            Debug.Log(audioSourceMusic.volume);
+            yield return new WaitForSeconds(0.05f);
+        }
+        audioSourceMusic.Stop();
+        audioSourceMusic.volume = 1;
+    } 
+    
+    public void PlayBossMusic()
+    {
+        audioSourceMusic.clip = bossMusic;
+        audioSourceMusic.Play();
     }
 }

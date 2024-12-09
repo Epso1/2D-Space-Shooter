@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimatedEnemy : Enemy
 {
-    [SerializeField] private bool flipAnimationHorizontally = false;
+    [SerializeField] private bool flipAnimationVertially = false;
     private Animator animator;
     private void Awake()
     {
@@ -14,13 +14,24 @@ public class AnimatedEnemy : Enemy
 
     void Start()
     {
-        // Si la posición inicial en el eje y es inferior a 0, activa el Trigger que reproduce la animación invertida horizontalmente
-        if (flipAnimationHorizontally == true)
+        // Si la posición inicial está en la mitad inferior de la pantalla, activa el Trigger que reproduce la animación invertida verticalmente
+        if (flipAnimationVertially == true)
         {
             if (transform.position.y < 0)
             {
-                animator.SetTrigger("FlipHorizontally");
+                animator.SetTrigger("FlipVertically");
             }
         }
+    }
+
+    private void ShootDiagonally()
+    {        
+        if (player != null)
+        {
+            Vector3 shotDirection = (player.position - transform.position).normalized;
+            GameObject bullet = Instantiate(bulletPrefab, bulletOrigin.position, Quaternion.identity);
+            bullet.GetComponent<EnemyBullet>().direction = shotDirection;
+        }
+
     }
 }
