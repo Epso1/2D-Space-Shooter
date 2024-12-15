@@ -14,10 +14,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InitialsEntry.unity
     guid: aa94be45516b3554198ba6208662a238
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameOver01.unity
     guid: d4d51b235643f4f46a556d8ae8d8e90b
   - enabled: 1
     path: Assets/Scenes/TopScores.unity
     guid: d1a46adf89356a74d877d0f2fd4cace0
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 4b5a600305edadc499ebac47be0bf2b3
+  - enabled: 1
+    path: Assets/Scenes/Stage01Clear.unity
+    guid: 2acf378186a07ec43aecc966c0c9490f
+  - enabled: 1
+    path: Assets/Scenes/Scene02.unity
+    guid: d47f173fb2ed2de409bfd1c83586145d
+  - enabled: 1
+    path: Assets/Scenes/Stage02Clear.unity
+    guid: e462a611a6065c047b7ad1b65ba998b2
   m_configObjects: {}

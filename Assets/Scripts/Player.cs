@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public static event Action OnShootMissile;
     public static event Action OnPlayerDies;
 
-    [SerializeField] private float moveVelocity = 1f;
+    [SerializeField] public float speed = 2f;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private GameObject missilePrefab;
     [SerializeField] private Transform bulletOrigin;
@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
     {
         if (moveInput != Vector2.zero)
         {
-            Vector2 newPosition = rb2D.position + moveInput * moveVelocity * Time.fixedDeltaTime;
+            Vector2 newPosition = rb2D.position + moveInput * speed * Time.fixedDeltaTime;
             newPosition = ClampPositionToScreen(newPosition);  // Limitar posición
             rb2D.MovePosition(newPosition);
         }

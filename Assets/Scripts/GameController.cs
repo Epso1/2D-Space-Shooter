@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private float bgMusicWait = 0f;
     [SerializeField] private string gameOverSceneName = "GameOver";
     [SerializeField] private string enterInitialsSceneName = "EnterInitials";
+    [SerializeField] private string nextSceneName = "Stage01Clear";
 
     private TextMeshProUGUI scoreText;
     private TextMeshProUGUI topScoreText;
@@ -74,6 +75,16 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public void StageClear()
+    {
+        StartCoroutine(StageClearEnum());
+    }
+
+    private IEnumerator StageClearEnum()
+    {
+        yield return new WaitForSeconds(reloadSceneTime);
+        SceneManager.LoadScene(nextSceneName);
+    }
 
     public void UpdateScore(int score)
     {
@@ -105,7 +116,6 @@ public class GameController : MonoBehaviour
         while (audioSourceMusic.volume > 0)
         {
             audioSourceMusic.volume -= 0.01f;
-            Debug.Log(audioSourceMusic.volume);
             yield return new WaitForSeconds(0.05f);
         }
         audioSourceMusic.Stop();

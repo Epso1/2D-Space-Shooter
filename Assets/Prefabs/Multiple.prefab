@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 1504558781452344628}
   m_Layer: 0
   m_Name: Multiple
-  m_TagString: Untagged
+  m_TagString: Multiple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

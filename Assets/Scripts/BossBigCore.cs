@@ -7,13 +7,16 @@ public class BossBigCore : MonoBehaviour
     [SerializeField] private List<Transform> shotOrigins;
     [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private GameObject bossBullet;
+    private int pointsWhenDies = 500;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private GameController gameController;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        gameController = GameObject.FindWithTag("GameController").GetComponent<GameController>();
     }
 
     // Update is called once per frame
@@ -27,6 +30,7 @@ public class BossBigCore : MonoBehaviour
     }
     private IEnumerator BossDiesEnum() 
     {
+        DataManager.Instance.AddPoints(pointsWhenDies);
         animator.SetTrigger("Death");
 
         for (int i = 0; i < 10; i++)
@@ -44,7 +48,9 @@ public class BossBigCore : MonoBehaviour
         }
         var bigExplosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         bigExplosion.transform.localScale = new Vector3(2, 2, 0);
+        gameController.StageClear();
         Destroy(gameObject);
+
     }
 
     public void BossShoots()

@@ -9,6 +9,7 @@ public class BossCore : MonoBehaviour
     [SerializeField] private Color hitColor;
     [SerializeField] private int hitsToChange = 20;
     [SerializeField] private List<Sprite> sprites;
+    private int pointsWhenHit = 50;
     private int currenSpriteIndex = 0;
     private BossBigCore boss;
     private int hitChangeCount = 0;
@@ -19,13 +20,6 @@ public class BossCore : MonoBehaviour
         circleCollider = GetComponent<CircleCollider2D>();
         boss = GetComponentInParent<BossBigCore>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("PlayerBullet"))
@@ -38,6 +32,7 @@ public class BossCore : MonoBehaviour
     private IEnumerator GetHit()
     {
         hitChangeCount++;
+        DataManager.Instance.AddPoints(pointsWhenHit);
         spriteRenderer.color = hitColor;
         yield return new WaitForSeconds(0.1f);       
 
@@ -54,8 +49,7 @@ public class BossCore : MonoBehaviour
 
     private void ChangeSprite()
     {
-        currenSpriteIndex++;
-        
+        currenSpriteIndex++;       
 
         if (currenSpriteIndex >= sprites.Count)
         {
@@ -66,8 +60,7 @@ public class BossCore : MonoBehaviour
         else
         {
             spriteRenderer.sprite = sprites[currenSpriteIndex];
-        }
-       
+        }       
     }
 
     private IEnumerator BossCoreDies()

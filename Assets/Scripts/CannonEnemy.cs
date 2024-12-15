@@ -12,6 +12,8 @@ public class CannonEnemy : MonoBehaviour
     [SerializeField] private string openAnimationName;
     [SerializeField] private string closeAnimationName;
     [SerializeField] private int shotsQuantity = 5;
+    [SerializeField] int pointsWhenDies = 50;
+    [SerializeField] GameObject explosionPrefab;
     private bool isPlayerClose = false;
 
     void Start()
@@ -35,7 +37,6 @@ public class CannonEnemy : MonoBehaviour
         {
             // Calcular la distancia al jugador
             float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-            Debug.Log(distanceToPlayer);
 
             // Si el jugador está dentro del rango y el tiempo de recarga ha pasado
             if (distanceToPlayer <= playerDetectionRange)
@@ -69,6 +70,26 @@ public class CannonEnemy : MonoBehaviour
 
     private void OnBecameInvisible()
     {
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerBullet") || collision.CompareTag("Missile"))
+        {
+            Destroy(collision.gameObject);
+            EnemyDies();
+        }
+        else if (collision.CompareTag("Player"))
+        {
+            EnemyDies();
+        }
+    }
+
+    private void EnemyDies()
+    {
+        DataManager.Instance.AddPoints(pointsWhenDies);
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

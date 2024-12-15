@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimatedEnemy : Enemy
 {
-    [SerializeField] private bool flipAnimationVertially = false;
+    [SerializeField] private bool flipAnimationVertically = false;
     private Animator animator;
     private void Awake()
     {
@@ -15,7 +15,7 @@ public class AnimatedEnemy : Enemy
     void Start()
     {
         // Si la posición inicial está en la mitad inferior de la pantalla, activa el Trigger que reproduce la animación invertida verticalmente
-        if (flipAnimationVertially == true)
+        if (flipAnimationVertically == true)
         {
             if (transform.position.y < 0)
             {

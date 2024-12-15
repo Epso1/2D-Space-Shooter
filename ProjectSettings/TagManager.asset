@@ -19,6 +19,9 @@ TagManager:
   - ScoreText
   - TopScoreText
   - LifesText
+  - DataManager
+  - BossBody
+  - Multiple
   layers:
   - Default
   - TransparentFX

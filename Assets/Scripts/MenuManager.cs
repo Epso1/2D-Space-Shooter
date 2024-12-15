@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 public class MenuManager : MonoBehaviour
 {
     [SerializeField] private AudioSource UIAudioSource;
@@ -12,31 +13,48 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private string topScoresSceneName = "TopScores";
     [SerializeField] private Button[] buttons; // Lista de botones en el menú
     [SerializeField] private AudioClip changeSelectionSFX;
+    [SerializeField] private AudioSource musicAudioSource;
+    [SerializeField] private AudioClip menuMusic;
 
-    private Color color0, color1, color2;   
+    private Color color0, color1, color2;
     private int selectedIndex = 0; // Índice del botón seleccionado
 
     private void Awake()
     {
+        // Detectar y destruir el DataManager si existe
+        GameObject dataManager = GameObject.FindWithTag("DataManager");
+        if (dataManager != null)
+        {
+            Destroy(dataManager);
+        }
+
         color2 = new Color(.784f, .784f, .784f);
         color1 = Color.white;
         color0 = Color.white;
         color0.a = 0f;
     }
+
     private void Start()
-    {        
+    {
+        PlayBGMusic();
         UpdateSelection();
     }
+
     private void Update()
     {
-        
-    }
 
+    }
+    private void PlayBGMusic()
+    {
+        musicAudioSource.clip = menuMusic;
+        musicAudioSource.Play();
+        StartCoroutine(FadeInMusicEnum());
+    }
     public void Move(InputAction.CallbackContext context)
     {
         Vector2 input = context.ReadValue<Vector2>();
         if (context.performed)
-        {          
+        {
             if (input.y > 0.5f)
             {
                 ChangeSelection(-1); // Arriba
@@ -46,8 +64,9 @@ public class MenuManager : MonoBehaviour
                 ChangeSelection(1); // Abajo
             }
         }
-        
+
     }
+
     private void UpdateSelection()
     {
         foreach (Button button in buttons)
@@ -67,13 +86,14 @@ public class MenuManager : MonoBehaviour
         UIAudioSource.PlayOneShot(changeSelectionSFX);
         UpdateSelection();
     }
+
     public void Submit(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
             buttons[selectedIndex].GetComponent<Image>().color = color2;
             buttons[selectedIndex].onClick.Invoke();
-        }              
+        }
     }
 
     public void StartGame()
@@ -97,12 +117,23 @@ public class MenuManager : MonoBehaviour
 
     private IEnumerator ToTopScoresEnum()
     {
-        
+
         yield return new WaitForSeconds(1f);
 
         SceneManager.LoadScene(topScoresSceneName);
     }
 
+
+    public IEnumerator FadeInMusicEnum()
+    {
+        musicAudioSource.volume = 0f;
+        while (musicAudioSource.volume < 1)
+        {
+            musicAudioSource.volume += 0.01f;
+            yield return new WaitForSeconds(0.05f);
+        }
+        musicAudioSource.volume = 1;
+    }
     public void ApplicationQuit()
     {
         Application.Quit();

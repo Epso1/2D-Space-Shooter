@@ -219,7 +219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialColor: {r: 1, g: 1, b: 1, a: 1}
   hitColor: {r: 1, g: 0.6431373, b: 0.5647059, a: 1}
-  hitsToChange: 20
+  hitsToChange: 5
   sprites:
   - {fileID: -17398282, guid: f6343ec4fbefc124c9f2857909f19b58, type: 3}
   - {fileID: -199489920, guid: f6343ec4fbefc124c9f2857909f19b58, type: 3}
@@ -321,9 +321,10 @@ GameObject:
   - component: {fileID: 6746876018527918934}
   - component: {fileID: 4198101023104890909}
   - component: {fileID: 401008448354811648}
+  - component: {fileID: 8560272509965078929}
   m_Layer: 0
   m_Name: Boss Big Core
-  m_TagString: Untagged
+  m_TagString: BossBody
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -467,6 +468,80 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!60 &8560272509965078929
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4059895904665844875}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.90625, y: 2.0625}
+    newSize: {x: 1.56, y: 0.78}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.0379524, y: 0.5552615}
+      - {x: 1.2142353, y: 0.9299873}
+      - {x: 0.9978838, y: 1.0763264}
+      - {x: 0.7076521, y: 0.91503227}
+      - {x: 0.5431671, y: 1.0433344}
+      - {x: -0.18439102, y: 1.0537882}
+      - {x: -1.4756627, y: 0.42607224}
+      - {x: -1.4468918, y: 0.32462966}
+      - {x: -1.0844021, y: 0.30792838}
+      - {x: -0.3068819, y: 0.2842951}
+      - {x: -0.14065456, y: 0.29625675}
+      - {x: 0.265625, y: 0.26622146}
+      - {x: 0.35675812, y: 0.019478954}
+      - {x: 0.27329063, y: -0.25300723}
+      - {x: 0.0019989014, y: -0.280635}
+      - {x: -0.15349865, y: -0.26315606}
+      - {x: -0.28732967, y: -0.31807417}
+      - {x: -1.2391148, y: -0.3265437}
+      - {x: -1.4655914, y: -0.31839645}
+      - {x: -1.4388041, y: -0.4114654}
+      - {x: -0.73243046, y: -0.8007865}
+      - {x: -0.25262833, y: -1.0240893}
+      - {x: 0.51144314, y: -1.0558918}
+      - {x: 0.670969, y: -0.91657937}
+      - {x: 0.9991579, y: -1.0626531}
+      - {x: 1.2105169, y: -0.8597577}
+      - {x: 0.9962082, y: -0.5214624}
+      - {x: 1.410429, y: -0.23546763}
+      - {x: 1.4445858, y: 0.17878062}
+  m_UseDelaunayMesh: 0
 --- !u!1 &6982280290464836967
 GameObject:
   m_ObjectHideFlags: 0
