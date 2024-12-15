@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform missileOrigin;
     [SerializeField] private AudioClip shotSFX;
     [SerializeField] private GameObject explosionPrefab;
+    [SerializeField] private float missileCooldownTime = 2f;
 
     private Vector2 moveInput;
     private PlayerInput playerInput;
@@ -27,6 +28,9 @@ public class Player : MonoBehaviour
     private Vector2 screenBounds;  // límites de la pantalla
     private float playerWidth;
     private float playerHeight;
+    [HideInInspector]public bool missileEnabled = false;
+
+    private bool canShootMissile = true; // Bandera para controlar el tiempo de recarga
 
     void Awake()
     {
@@ -87,12 +91,22 @@ public class Player : MonoBehaviour
 
     public void shootMissile(InputAction.CallbackContext callbackContext)
     {
-        if (callbackContext.performed)
+        if (callbackContext.performed && missileEnabled && canShootMissile)
         {
             Instantiate(missilePrefab, missileOrigin.position, Quaternion.identity);
             // Disparar evento
             OnShootMissile?.Invoke();
+
+            // Deshabilitar disparar misiles por 3 segundos
+            StartCoroutine(MissileCooldown());
         }
+    }
+
+    private IEnumerator MissileCooldown()
+    {
+        canShootMissile = false;
+        yield return new WaitForSeconds(missileCooldownTime); // Tiempo de recarga de 3 segundos
+        canShootMissile = true;
     }
 
     private void PlayerDies()

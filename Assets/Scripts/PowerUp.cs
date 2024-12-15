@@ -11,8 +11,9 @@ public class PowerUp : MonoBehaviour
     [SerializeField] float maxPlayerSpeed = 6.5f;
     [SerializeField] AudioClip speedUpVoice;
     [SerializeField] AudioClip multipleVoice;
+    [SerializeField] AudioClip missileVoice;
     [SerializeField] GameObject multiplePrefab;
-    private int pointsWhenColected = 100;
+    private int pointsWhenCollected = 100;
     private Player player;
     private AudioSource audioSourceVoice;
     private Rigidbody2D rb2D;
@@ -30,6 +31,22 @@ public class PowerUp : MonoBehaviour
     void FixedUpdate()
     {
         rb2D.MovePosition(rb2D.position + initialDirection * speed * Time.fixedDeltaTime);
+    }
+
+    public void EnableMissile()
+    {
+        
+        if (player != null && player.missileEnabled == false)
+        {
+            PlayMissileVoice();
+            player.missileEnabled = true;
+        }        
+    }
+
+    public void PlayMissileVoice()
+    {
+        audioSourceVoice.clip = missileVoice;
+        audioSourceVoice.Play();
     }
 
     public void SpeedUp()
@@ -70,7 +87,7 @@ public class PowerUp : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            DataManager.Instance.AddPoints(pointsWhenColected);
+            DataManager.Instance.AddPoints(pointsWhenCollected);
             powerUpEffect.Invoke();
             Destroy(gameObject);
         }

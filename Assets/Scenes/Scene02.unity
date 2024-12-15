@@ -2246,6 +2246,8 @@ MonoBehaviour:
   missileOrigin: {fileID: 1842397608}
   shotSFX: {fileID: 8300000, guid: 82106f57fabeb7e449c9ece356ca363b, type: 3}
   explosionPrefab: {fileID: 8173109279539907194, guid: 01cc7d102c9e93d4b90c666280201c86, type: 3}
+  missileCooldownTime: 2
+  missileEnabled: 0
 --- !u!1 &383507663
 GameObject:
   m_ObjectHideFlags: 0
@@ -24044,8 +24046,8 @@ MonoBehaviour:
   primaryPosition: {fileID: 585782855}
   secondaryPosition: {fileID: 1481180660}
   parentTransform: {fileID: 189481878}
-  powerUpPrefab: {fileID: 0}
-  instantiatesPowerUp: 0
+  powerUpPrefab: {fileID: 7534317786974401411, guid: 0f4ef83a78bb03b44a6ad3a73c7aa1d4, type: 3}
+  instantiatesPowerUp: 1
   multipleVerticalOrigins: 0
 --- !u!61 &1414674216
 BoxCollider2D:

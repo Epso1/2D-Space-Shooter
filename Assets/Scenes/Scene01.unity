@@ -1991,6 +1991,7 @@ MonoBehaviour:
   missileOrigin: {fileID: 1842397608}
   shotSFX: {fileID: 8300000, guid: 82106f57fabeb7e449c9ece356ca363b, type: 3}
   explosionPrefab: {fileID: 8173109279539907194, guid: 01cc7d102c9e93d4b90c666280201c86, type: 3}
+  missileEnabled: 0
 --- !u!1 &383507663
 GameObject:
   m_ObjectHideFlags: 0
