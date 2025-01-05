@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     [SerializeField] private AudioClip shotSFX;
     [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private float missileCooldownTime = 2f;
+    [SerializeField] GameObject multiplePrefab;
 
     private Vector2 moveInput;
     private PlayerInput playerInput;
@@ -28,7 +29,8 @@ public class Player : MonoBehaviour
     private Vector2 screenBounds;  // límites de la pantalla
     private float playerWidth;
     private float playerHeight;
-    [HideInInspector]public bool missileEnabled = false;
+    public bool missileEnabled = false;
+    public bool multipleEnabled = false;
 
     private bool canShootMissile = true; // Bandera para controlar el tiempo de recarga
 
@@ -44,6 +46,20 @@ public class Player : MonoBehaviour
 
         // Definir los límites de la pantalla en unidades del mundo
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+    }
+
+    void Start()
+    {
+        // Inicializa el estado de los powerUps
+        PowerUpManager.Instance.LoadPowerUpData();
+
+        if (multipleEnabled)
+        {
+            if (GameObject.FindWithTag("Multiple") == null)
+            {
+                Instantiate(multiplePrefab, transform.position + new Vector3(-1, 0, 0), Quaternion.identity);
+            }
+        }
     }
 
     void Update()
@@ -114,7 +130,8 @@ public class Player : MonoBehaviour
         // Disparar evento
         OnPlayerDies?.Invoke();
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-        DataManager.Instance.LoseOneLife();
+        PowerUpManager.Instance.ResetPowerUpData();
+        DataManager.Instance.LoseOneLife();        
         Destroy(gameObject);
     }
 

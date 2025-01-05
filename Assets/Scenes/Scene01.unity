@@ -122,6 +122,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &76932974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 76932976}
+  - component: {fileID: 76932975}
+  m_Layer: 0
+  m_Name: PowerUpManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &76932975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76932974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 043831fc404ab1040a5c74e9e4c14932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMissileActive: 0
+  isMultipleActive: 0
+  currentSpeed: 2
+--- !u!4 &76932976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76932974}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &94714043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,7 +2038,10 @@ MonoBehaviour:
   missileOrigin: {fileID: 1842397608}
   shotSFX: {fileID: 8300000, guid: 82106f57fabeb7e449c9ece356ca363b, type: 3}
   explosionPrefab: {fileID: 8173109279539907194, guid: 01cc7d102c9e93d4b90c666280201c86, type: 3}
+  missileCooldownTime: 2
+  multiplePrefab: {fileID: 5317355778180285526, guid: a2e97239a25229f41a7a3522bc7c5a06, type: 3}
   missileEnabled: 0
+  multipleEnabled: 0
 --- !u!1 &383507663
 GameObject:
   m_ObjectHideFlags: 0
@@ -20319,3 +20369,4 @@ SceneRoots:
   - {fileID: 125377605}
   - {fileID: 383507665}
   - {fileID: 189481878}
+  - {fileID: 76932976}

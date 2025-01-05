@@ -34,12 +34,12 @@ public class PowerUp : MonoBehaviour
     }
 
     public void EnableMissile()
-    {
-        
+    {        
         if (player != null && player.missileEnabled == false)
         {
             PlayMissileVoice();
             player.missileEnabled = true;
+            PowerUpManager.Instance.SavePowerUpData();
         }        
     }
 
@@ -55,6 +55,7 @@ public class PowerUp : MonoBehaviour
         {
             PlaySpeedUpVoice();
             player.speed *= 1.25f;
+            PowerUpManager.Instance.SavePowerUpData();
         }
     }
 
@@ -68,8 +69,10 @@ public class PowerUp : MonoBehaviour
     {
         if (GameObject.FindWithTag("Multiple") == null)
         {
+            player.multipleEnabled = true;
             PlayMultipleVoice();
             Instantiate(multiplePrefab, player.transform.position + new Vector3(-1, 0, 0), Quaternion.identity);
+            PowerUpManager.Instance.SavePowerUpData();
         }     
     }
     public void PlayMultipleVoice()
@@ -86,7 +89,7 @@ public class PowerUp : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
-        {
+        {           
             DataManager.Instance.AddPoints(pointsWhenCollected);
             powerUpEffect.Invoke();
             Destroy(gameObject);
