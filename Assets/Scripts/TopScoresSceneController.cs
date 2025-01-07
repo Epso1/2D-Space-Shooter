@@ -8,6 +8,7 @@ public class TopScoresSceneController : MonoBehaviour
 
     [SerializeField] private AudioSource UIAudioSource;
     [SerializeField] private string mainMenuSceneName = "MainMenu";
+    [SerializeField] private string gameOverSceneName = "GameOver";
     [SerializeField] private Button[] buttons; // Lista de botones en el menú
     [SerializeField] private AudioClip changeSelectionSFX;
 
@@ -38,8 +39,15 @@ public class TopScoresSceneController : MonoBehaviour
         }
     }
 
-    public void ToMainMenu()
+    public void ToNextScene()
     {
-        SceneManager.LoadScene(mainMenuSceneName);
+        if (PowerUpManager.Instance.isTopScore)
+        {
+            SceneManager.LoadScene(gameOverSceneName);
+        }
+        else
+        {
+            SceneManager.LoadScene(mainMenuSceneName);
+        }
     }
 }

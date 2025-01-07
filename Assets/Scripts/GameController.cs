@@ -65,6 +65,7 @@ public class GameController : MonoBehaviour
 
         if (isHighScore)
         {
+            PowerUpManager.Instance.isTopScore = true;
             // Si es una puntuación alta, cargar la escena para introducir iniciales
             SceneManager.LoadScene(enterInitialsSceneName);
         }

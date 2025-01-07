@@ -12,7 +12,7 @@ public class PowerUpManager : MonoBehaviour
     public bool isMissileActive = false;
     public bool isMultipleActive = false;
     public float currentSpeed = 2f;
-
+    public bool isTopScore = false;
     private Player player;
 
     private void Awake()
