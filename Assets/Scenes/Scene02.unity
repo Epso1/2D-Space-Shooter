@@ -23150,6 +23150,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialWait: 3
   bossPrefab: {fileID: 4059895904665844875, guid: 7a1367b8d70bf9f43b5ac96a8060685d, type: 3}
+  stopScrollWhenBoss: 1
+  backgrounds:
+  - {fileID: 1490176195}
+  - {fileID: 1184166241}
+  - {fileID: 146006965}
+  obstaclesBackgroundMover: {fileID: 649607293}
 --- !u!61 &970824128
 BoxCollider2D:
   m_ObjectHideFlags: 0

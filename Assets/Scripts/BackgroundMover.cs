@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BackgroundMover : MonoBehaviour
 {
-    [SerializeField] private float bgVelocity = 2f;
+    [SerializeField] public float bgVelocity = 2f;
     private Vector3 direction;
 
     void Start()

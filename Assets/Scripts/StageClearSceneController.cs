@@ -11,6 +11,7 @@ public class StageClearSceneController : MonoBehaviour
     [SerializeField] private AudioSource UIAudioSource;
     [SerializeField] private string mainMenuSceneName = "MainMenu";
     [SerializeField] private string enterInitialsSceneName = "InitialsEntry";
+    [SerializeField] private string gameOverSceneName = "GameOver";
     [SerializeField] private Button[] buttons; // Lista de botones en el menú
     [SerializeField] private AudioClip changeSelectionSFX;
     [SerializeField] private string nextSceneName = "Scene02";
@@ -61,14 +62,15 @@ public class StageClearSceneController : MonoBehaviour
         bool isHighScore = DataManager.Instance.score > DataManager.Instance.highScores[DataManager.Instance.highScores.Count - 1].score;
 
         if (isHighScore)
-        {
+        {           
             // Si es una puntuación alta, cargar la escena para introducir iniciales
+            PowerUpManager.Instance.isTopScore = true;
             SceneManager.LoadScene(enterInitialsSceneName);
         }
         else
         {
-            // Si no, cargar el menu princiapl
-            SceneManager.LoadScene(mainMenuSceneName);
+            // Si no, ir a la escena de Game Over
+            SceneManager.LoadScene(gameOverSceneName);
         }
     }
 

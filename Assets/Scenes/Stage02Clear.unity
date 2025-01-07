@@ -401,6 +401,7 @@ MonoBehaviour:
   UIAudioSource: {fileID: 0}
   mainMenuSceneName: MainMenu
   enterInitialsSceneName: InitialsEntry
+  gameOverSceneName: GameOver
   buttons:
   - {fileID: 18721497}
   changeSelectionSFX: {fileID: 8300000, guid: 87f9aaea11466804c82411d4da4a4d28, type: 3}
@@ -1311,7 +1312,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1849048186
 RectTransform:
   m_ObjectHideFlags: 0

@@ -49,18 +49,19 @@ public class CannonEnemy : MonoBehaviour
     IEnumerator Shoot()
     {     
         isPlayerClose = true;
-        
-        yield return new WaitForSeconds(0.5f);
-
-        
         if (player != null)
         {
+            yield return new WaitForSeconds(0.5f);   
             animator.Play(openAnimationName);
             yield return new WaitForSeconds(0.3f);
-            Vector3 shotDirection = (player.position - transform.position).normalized;
-            GameObject bullet = Instantiate(bulletPrefab, bulletOrigin.position, Quaternion.identity);
-            bullet.GetComponent<EnemyBullet>().direction = shotDirection;                
-            animator.Play(closeAnimationName);
+            if (player != null)
+            {
+                Vector3 shotDirection = (player.position - transform.position).normalized;
+                GameObject bullet = Instantiate(bulletPrefab, bulletOrigin.position, Quaternion.identity);
+                bullet.GetComponent<EnemyBullet>().direction = shotDirection;
+                animator.Play(closeAnimationName);
+            }
+           
             yield return new WaitForSeconds(0.3f);
         }       
         

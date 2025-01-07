@@ -8,7 +8,7 @@ public class GameOverSceneController : MonoBehaviour
     [SerializeField] string mainMenuSceneName = "MainMenu";
     void Start()
     {
-        Invoke("ToMainMenu", 6f);
+        Invoke("ToMainMenu", 5f);
     }
 
     // Update is called once per frame
