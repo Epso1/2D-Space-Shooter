@@ -1,0 +1,3330 @@
+fileFormatVersion: 2
+guid: c4acb26813e3e18468e427998cb08bcb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 154
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a725ac5bdd170704eb4f3acb23bdb3d9
+      internalID: -1150411829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 154
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a7253197c143a4e96a3f6a7ab5a593
+      internalID: -166950989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 152
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9bf8350c7ba6348aa2a54bfe8d5e7c
+      internalID: -482636225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_3
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 154
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecba5b6cbae1e9c41b4cd6164be20c48
+      internalID: -272250660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_4
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 154
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69dc776a1508fc48905eeddbcb44323
+      internalID: 488996683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 154
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ce41d952a3a054287187af82f9eaf0
+      internalID: 1084797269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_6
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 154
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf765b8c8fe1af4ab4ce33510dce559
+      internalID: 455436649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 154
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1b07b600a747f4cbfdb9f5f4e8d5f9
+      internalID: 548328625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 154
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13bc8cdb559845f42b11d7e85aac960e
+      internalID: 1543303511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 154
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1df35729f292bb4f8056f8c6aa84377
+      internalID: -1709175830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 131
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6f9d294ca127141acb3cd102d77eca
+      internalID: -1825589417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_11
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 131
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7de8e0c33bf644ca4e6d8de4156d5d
+      internalID: -1672542154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 131
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e2e837e9f8f3645b4a37ee15838c58
+      internalID: 1598507440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_13
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 131
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b642eee16944c54c9558bc5e11239d2
+      internalID: 1217705750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_14
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 131
+        width: 30
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96495b2c2fefdcb47b2a86f23e1b5b6e
+      internalID: 1122724799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_15
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 131
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c67952eae6e114697c2b7d5b532cd4
+      internalID: 2120574511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_16
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 131
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c420ac3edce4d5409f3bfb908a41f8c
+      internalID: -864731242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 131
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d623e3710d9b0ca49bb08ef57e2d83f4
+      internalID: 1379512555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 131
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecee48a89e381bd4dbe91d3e01c43000
+      internalID: 1558332742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_19
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 131
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2cdc461d28ea447b485a2d8583a2cc
+      internalID: -900416053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_20
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 131
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9cc86d89855d704190ec43675f753f9
+      internalID: 1235604948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_21
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 131
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132884eca2cfffb41afb678f64f24d26
+      internalID: -1698583292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_22
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 131
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aef9c7a2c6304849adde84ef72193d7
+      internalID: -867197296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_23
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 131
+        width: 61
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a889e112b99bfb4dbc4809edc804439
+      internalID: 457118886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_24
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 131
+        width: 26
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3dbe9bc92199b4489011a68be1e50a0
+      internalID: -1478723634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_25
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 131
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5b7ba8c7894dc4b894450a2397deaf
+      internalID: 410053861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_26
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 131
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603d99bb110826045b6a6002fe3e7266
+      internalID: -1423133119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_27
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 131
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a133a49cadde14286fe4fe1d741aa8
+      internalID: -655769205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_28
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 131
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f09dbbe72c85f4f915a240189b3554
+      internalID: 1685561868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_29
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 95
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a175e617bfb89409fadee3e5a90b0e
+      internalID: -1009037743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_30
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 96
+        width: 11
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fe3b751c797b140939d9431ab27b5a
+      internalID: 861766118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_31
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 95
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13bf2fd546a1442489c70ea4158612fd
+      internalID: 537414632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_32
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 95
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b140e3f5cd624884b9fea28339b0bb4d
+      internalID: 662409887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_33
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 96
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382f75afcf8e6934381030959ec000eb
+      internalID: -978225019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_34
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 111
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be571453c918d342860dad3fd0fc0a9
+      internalID: 2014198330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_35
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 111
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34d082c7f855774380a710e889c9586
+      internalID: 826091474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_36
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 111
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864703641d20e234898778a135622579
+      internalID: 1221648618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_37
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 111
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c912a8d5775d7947b25a630ad40b364
+      internalID: -498647471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_38
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 109
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9672234be727fca4e90ed40b637d6019
+      internalID: 78887243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_39
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 100
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474f1ae40fa6856459874e2839fe99a2
+      internalID: 205623118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_40
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 109
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b23e7406a05d4e45b3a18acb6863d24
+      internalID: -657803959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_41
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 106
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4570d187bca32024986b39eaec97d6be
+      internalID: 1867362572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_42
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 106
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1daf48456998bbe419665d906274835b
+      internalID: 173518240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_43
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 106
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bc82e16959e63458b8aa5c8e960187
+      internalID: -808903246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_44
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 95
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7811ae3bd19e16428e2fac54d15b448
+      internalID: -29798070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_45
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 110
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3e4004307e71f4fa5c077ea3c80cde
+      internalID: -1713837921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_46
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 110
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89dc188b3ceb2cb4196e5dd6b49d44e4
+      internalID: -1703769059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_47
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 111
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a30ef67fa9a1041af5021d55844586
+      internalID: 1654668291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_48
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 100
+        width: 5
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434cf493517bcc248af7738d77c69ef7
+      internalID: -102661082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_49
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 95
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a59692385a1a5a4e94242375e654d38
+      internalID: -921856941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_50
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 110
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7043019d1fdcf34ba8eb02728c4166b
+      internalID: 547495210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_51
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 110
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a1e51c8bbc6f746979c54eeaf83cf1
+      internalID: -1468710381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_52
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 110
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3554921c5b4d7a4bb23c1898a21d45d
+      internalID: 976831393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_53
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 94
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762465ffb49f3e749ba6aa4906ba1618
+      internalID: 174911765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_54
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 94
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad01da90021acb4e9738e164fd517f0
+      internalID: 462396682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_55
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 94
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45769a2a16de894cba93776c27ac44e
+      internalID: 1923669542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_56
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 94
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90536ac952b6715468c34215ee03b303
+      internalID: -852085264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_57
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 100
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c5bb3d0169b6a45a228faf052f8049
+      internalID: 575451000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_58
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 100
+        width: 22
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b611ef0c4f5242498cd243211ad7766
+      internalID: -1759886577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_59
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 100
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828968b8419f27c4199ca401489b8c9d
+      internalID: 1627929309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_60
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 100
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feebbb295915f7d49b04d0750a855c09
+      internalID: -451974533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_61
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 100
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959cd231ac5777b46b22597bc7462e82
+      internalID: 1368203725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_62
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 100
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a56d19e8c5d544bb21572b45904836
+      internalID: -1783537638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_63
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 100
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aab8d9d9d1920d478d0407440e0bbec
+      internalID: 2079562839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_64
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 100
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1ea24a0597cd945b1aa8ceca618346
+      internalID: 228121636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_65
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 100
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa2e96ce3c50c14bafad8cb7a0e4222
+      internalID: 682218385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_66
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 100
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f75c5b62971ff844a8c9841f0d4819d
+      internalID: 1207435284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_67
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 98
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83f62f352d05d149be2c4ada40e616a
+      internalID: 822954086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_68
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 98
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8ddc02a6b4a2441823d6a2b6773ca3
+      internalID: -527613945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_69
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 99
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ebf2b0b77dc304996f525242269be4
+      internalID: -1007105377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_70
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 98
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4f71e6485da964ca2b575492d2df2a
+      internalID: -77723096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_71
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 98
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6087924e06f2545a2b52e6810102f5
+      internalID: 1669023506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_72
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 99
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296c9751c343e074cb53f6de3ed3f973
+      internalID: 1736116121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_73
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 79
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4eb7aaa3e4996b4cbf6cd518fdf6445
+      internalID: -1220665608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_74
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 79
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bc93cd9987ddd4cb0607456cc7f84b
+      internalID: 1753525204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_75
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 79
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b7254e40d70234bb1f8753292514ed
+      internalID: 178371983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_76
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 28
+        width: 64
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b55766cc21820344a119074fbb818d0
+      internalID: -810725763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_77
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 28
+        width: 64
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463a406031565bc4a946fd37b2cb1684
+      internalID: 1498729958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_78
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 28
+        width: 79
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf7428808da7cd42b6364da0e8323fc
+      internalID: -856354116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_79
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 28
+        width: 79
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a055d5d054ad4c49b8cbe9b60681947
+      internalID: 220704862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_80
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 28
+        width: 79
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e47a856a97a884291eadd20638d2d4
+      internalID: -1168000943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_81
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b96c40a942b4a54fa7871110bb1fdc9
+      internalID: -1082497857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_82
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 28
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96207858c392daf4fab02aa2aa6eb78a
+      internalID: 1305617944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_83
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 17
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753b053344af7874397cf38cbc8e6492
+      internalID: -590481925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_84
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 17
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcda846600997d845928172739731a60
+      internalID: -1243319795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_85
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 15
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cfd353408f2d3428dbd7a3e4b8e6b3
+      internalID: 1572237171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_86
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 17
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b323b015e289f8244ae62aca86c35c99
+      internalID: -1447883763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_87
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 17
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1deed4a102adc014ba575226bbbb3ec8
+      internalID: -537999567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_88
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 17
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3bc7c3237330f4482e8a9a7f4ba117
+      internalID: 2111266076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_89
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 17
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee883967041fb464480b68e1cbdcc487
+      internalID: -1098799442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_90
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 17
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21f9b55676c1294fbbe58ed97d840ea
+      internalID: -714531478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_91
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 17
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c857e8856af534da00e3f5e96d1a5c
+      internalID: -1354987710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_92
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 17
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42340ac4c92b0e4ba6362aff97bc035
+      internalID: -641815477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_93
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 17
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c71ff40416da34f822fef6b0628a23
+      internalID: 1745393661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_94
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 17
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3844947f6599bd44c87d7edbfecd4657
+      internalID: 544442514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_95
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 17
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c480909815f29943862a19034ca6698
+      internalID: -1204352407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_96
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 17
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c6d66d842c1ab4e8f2c51aacff195b
+      internalID: -976918499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_97
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 17
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbfdab406fef834293250af71417627
+      internalID: -1217782789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_98
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 17
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdaa179bb7f25144aac5e6417a3ae5b
+      internalID: 328979998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_99
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 17
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd788470024b2f4a973271d97bc3239
+      internalID: 1952217302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_100
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 17
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2002eb6637234664486fca629471ca80
+      internalID: 1060431316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_101
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 17
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d494c5bb6049d44ad0e27f1f8e0290
+      internalID: -350360507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_102
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 15
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4b4e3b0d460c2478184f81dedbe8bf
+      internalID: -1646746422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_103
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 15
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22f2226ff0817f49993e61536632885
+      internalID: 1806857349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_104
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 17
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad607cb257fd45c47b4169f108afb6fd
+      internalID: -222815716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_105
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 17
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4d0a557af58cc4d82e5e0c2aab0f2c
+      internalID: -785089645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_106
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 17
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206549b35eb296c488bfb8c8fc7f4353
+      internalID: -36031248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_107
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 15
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb77f85a2828d9c4cae90df3a932f09f
+      internalID: -2083847545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_108
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 17
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4680a1bc2d58b84692b040402a977c7
+      internalID: -256546412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_109
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 16
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99499496b4ac33e4fb40bba2ecc56e2c
+      internalID: -1542225605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_110
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366e946a7a62c434bba07ef6c7732427
+      internalID: 1117690531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_111
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 17
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6b99dc5af08054ebac371340c32530
+      internalID: 204507199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_112
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 15
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665ca68051472714cbd057811d99aa0f
+      internalID: -935931722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_113
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 17
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18a6a255d4395e49b0a541da304d1a0
+      internalID: 1582418757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_114
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 17
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5965fe177be1a4d8cfa2a73673d18f
+      internalID: 1580420887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_115
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92064623674f1ac479d5187d6660ae67
+      internalID: -1026732234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_116
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 17
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5da771295f5b724592e26c0be794082
+      internalID: -1576384716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_117
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 6
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e07788df43b88f4983afcde0b756e02
+      internalID: 314614713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_118
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564ad190a322b7d4e8b8bfa0d847c3a1
+      internalID: -497232496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_119
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 4
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f5a6584ffa2f74a8a372d596fb0eb8
+      internalID: -2089568113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_120
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 4
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72225261b9db8a24e8cd51e4438d0323
+      internalID: -492325086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_121
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 4
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19acc9281bff2e247b3500b41b278bc3
+      internalID: 1529291646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_122
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79661e416a187524f94600c1de2c3acd
+      internalID: -355741613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_123
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 6
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd91513459f6f5478e7cd741e089ae0
+      internalID: 2005357543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_124
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 6
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1312002ffbb9f4c987810d7007e2b7
+      internalID: 1309321185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_125
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb43b112f4e01a43a47534d42f3b45b
+      internalID: -790011670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_126
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b986473750eb3c34cb02a98c6830e4cc
+      internalID: -666570800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_127
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb31cc234c72e44eb98a78036e166d8
+      internalID: -1062571614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_128
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 6
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a29ce2d47d8fd4db12fe3152a319a0
+      internalID: 208361979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_129
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 6
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336c827b817e0d14aaabfe6e95360ef2
+      internalID: 147907340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_130
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 6
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10a2b540638e4340ab4044970d7a4a9
+      internalID: 1556726796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_131
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 6
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a9c38e125d1b849b68d2de4535f35a
+      internalID: -968679564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_132
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 6
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed3e0a00fce4a549aa42e5e1b448a9a
+      internalID: 1043833411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_133
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca3ad0c3c984964e8486bb0868b8482
+      internalID: 1857233231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_134
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374135824415e244594fab249f06205e
+      internalID: 411204227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_135
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482b4d3fb21e38c469c41dec42cbaa2e
+      internalID: 2076347621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_136
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 6
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8bf3cead9976c4a807918f2df1fe74
+      internalID: 1356146374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_137
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945386907ce3b0940bce4ff568d9fd72
+      internalID: -2140349644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_138
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d4b3add4b6a874583c1d722961aa60
+      internalID: -890795237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_139
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2de919c45ef44449a31ccc88d515c6
+      internalID: 1558428632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_140
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd7fc972c29bf94eb2ec5a80101ca27
+      internalID: -2002652395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_141
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6edafd249648574498b366ef269b849
+      internalID: -356945277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_142
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9254a808f2985a45819a4bf89179eb3
+      internalID: 259513699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_143
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 6
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dede745142e98647866df2a11ab9899
+      internalID: 556651807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Gradius - Large Enemies_144
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 4
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44f753fcfd9977488be714061c3ba2a
+      internalID: 1257768990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Arcade - Gradius - Large Enemies_0: -1150411829
+      Arcade - Gradius - Large Enemies_1: -166950989
+      Arcade - Gradius - Large Enemies_10: -1825589417
+      Arcade - Gradius - Large Enemies_100: 1060431316
+      Arcade - Gradius - Large Enemies_101: -350360507
+      Arcade - Gradius - Large Enemies_102: -1646746422
+      Arcade - Gradius - Large Enemies_103: 1806857349
+      Arcade - Gradius - Large Enemies_104: -222815716
+      Arcade - Gradius - Large Enemies_105: -785089645
+      Arcade - Gradius - Large Enemies_106: -36031248
+      Arcade - Gradius - Large Enemies_107: -2083847545
+      Arcade - Gradius - Large Enemies_108: -256546412
+      Arcade - Gradius - Large Enemies_109: -1542225605
+      Arcade - Gradius - Large Enemies_11: -1672542154
+      Arcade - Gradius - Large Enemies_110: 1117690531
+      Arcade - Gradius - Large Enemies_111: 204507199
+      Arcade - Gradius - Large Enemies_112: -935931722
+      Arcade - Gradius - Large Enemies_113: 1582418757
+      Arcade - Gradius - Large Enemies_114: 1580420887
+      Arcade - Gradius - Large Enemies_115: -1026732234
+      Arcade - Gradius - Large Enemies_116: -1576384716
+      Arcade - Gradius - Large Enemies_117: 314614713
+      Arcade - Gradius - Large Enemies_118: -497232496
+      Arcade - Gradius - Large Enemies_119: -2089568113
+      Arcade - Gradius - Large Enemies_12: 1598507440
+      Arcade - Gradius - Large Enemies_120: -492325086
+      Arcade - Gradius - Large Enemies_121: 1529291646
+      Arcade - Gradius - Large Enemies_122: -355741613
+      Arcade - Gradius - Large Enemies_123: 2005357543
+      Arcade - Gradius - Large Enemies_124: 1309321185
+      Arcade - Gradius - Large Enemies_125: -790011670
+      Arcade - Gradius - Large Enemies_126: -666570800
+      Arcade - Gradius - Large Enemies_127: -1062571614
+      Arcade - Gradius - Large Enemies_128: 208361979
+      Arcade - Gradius - Large Enemies_129: 147907340
+      Arcade - Gradius - Large Enemies_13: 1217705750
+      Arcade - Gradius - Large Enemies_130: 1556726796
+      Arcade - Gradius - Large Enemies_131: -968679564
+      Arcade - Gradius - Large Enemies_132: 1043833411
+      Arcade - Gradius - Large Enemies_133: 1857233231
+      Arcade - Gradius - Large Enemies_134: 411204227
+      Arcade - Gradius - Large Enemies_135: 2076347621
+      Arcade - Gradius - Large Enemies_136: 1356146374
+      Arcade - Gradius - Large Enemies_137: -2140349644
+      Arcade - Gradius - Large Enemies_138: -890795237
+      Arcade - Gradius - Large Enemies_139: 1558428632
+      Arcade - Gradius - Large Enemies_14: 1122724799
+      Arcade - Gradius - Large Enemies_140: -2002652395
+      Arcade - Gradius - Large Enemies_141: -356945277
+      Arcade - Gradius - Large Enemies_142: 259513699
+      Arcade - Gradius - Large Enemies_143: 556651807
+      Arcade - Gradius - Large Enemies_144: 1257768990
+      Arcade - Gradius - Large Enemies_15: 2120574511
+      Arcade - Gradius - Large Enemies_16: -864731242
+      Arcade - Gradius - Large Enemies_17: 1379512555
+      Arcade - Gradius - Large Enemies_18: 1558332742
+      Arcade - Gradius - Large Enemies_19: -900416053
+      Arcade - Gradius - Large Enemies_2: -482636225
+      Arcade - Gradius - Large Enemies_20: 1235604948
+      Arcade - Gradius - Large Enemies_21: -1698583292
+      Arcade - Gradius - Large Enemies_22: -867197296
+      Arcade - Gradius - Large Enemies_23: 457118886
+      Arcade - Gradius - Large Enemies_24: -1478723634
+      Arcade - Gradius - Large Enemies_25: 410053861
+      Arcade - Gradius - Large Enemies_26: -1423133119
+      Arcade - Gradius - Large Enemies_27: -655769205
+      Arcade - Gradius - Large Enemies_28: 1685561868
+      Arcade - Gradius - Large Enemies_29: -1009037743
+      Arcade - Gradius - Large Enemies_3: -272250660
+      Arcade - Gradius - Large Enemies_30: 861766118
+      Arcade - Gradius - Large Enemies_31: 537414632
+      Arcade - Gradius - Large Enemies_32: 662409887
+      Arcade - Gradius - Large Enemies_33: -978225019
+      Arcade - Gradius - Large Enemies_34: 2014198330
+      Arcade - Gradius - Large Enemies_35: 826091474
+      Arcade - Gradius - Large Enemies_36: 1221648618
+      Arcade - Gradius - Large Enemies_37: -498647471
+      Arcade - Gradius - Large Enemies_38: 78887243
+      Arcade - Gradius - Large Enemies_39: 205623118
+      Arcade - Gradius - Large Enemies_4: 488996683
+      Arcade - Gradius - Large Enemies_40: -657803959
+      Arcade - Gradius - Large Enemies_41: 1867362572
+      Arcade - Gradius - Large Enemies_42: 173518240
+      Arcade - Gradius - Large Enemies_43: -808903246
+      Arcade - Gradius - Large Enemies_44: -29798070
+      Arcade - Gradius - Large Enemies_45: -1713837921
+      Arcade - Gradius - Large Enemies_46: -1703769059
+      Arcade - Gradius - Large Enemies_47: 1654668291
+      Arcade - Gradius - Large Enemies_48: -102661082
+      Arcade - Gradius - Large Enemies_49: -921856941
+      Arcade - Gradius - Large Enemies_5: 1084797269
+      Arcade - Gradius - Large Enemies_50: 547495210
+      Arcade - Gradius - Large Enemies_51: -1468710381
+      Arcade - Gradius - Large Enemies_52: 976831393
+      Arcade - Gradius - Large Enemies_53: 174911765
+      Arcade - Gradius - Large Enemies_54: 462396682
+      Arcade - Gradius - Large Enemies_55: 1923669542
+      Arcade - Gradius - Large Enemies_56: -852085264
+      Arcade - Gradius - Large Enemies_57: 575451000
+      Arcade - Gradius - Large Enemies_58: -1759886577
+      Arcade - Gradius - Large Enemies_59: 1627929309
+      Arcade - Gradius - Large Enemies_6: 455436649
+      Arcade - Gradius - Large Enemies_60: -451974533
+      Arcade - Gradius - Large Enemies_61: 1368203725
+      Arcade - Gradius - Large Enemies_62: -1783537638
+      Arcade - Gradius - Large Enemies_63: 2079562839
+      Arcade - Gradius - Large Enemies_64: 228121636
+      Arcade - Gradius - Large Enemies_65: 682218385
+      Arcade - Gradius - Large Enemies_66: 1207435284
+      Arcade - Gradius - Large Enemies_67: 822954086
+      Arcade - Gradius - Large Enemies_68: -527613945
+      Arcade - Gradius - Large Enemies_69: -1007105377
+      Arcade - Gradius - Large Enemies_7: 548328625
+      Arcade - Gradius - Large Enemies_70: -77723096
+      Arcade - Gradius - Large Enemies_71: 1669023506
+      Arcade - Gradius - Large Enemies_72: 1736116121
+      Arcade - Gradius - Large Enemies_73: -1220665608
+      Arcade - Gradius - Large Enemies_74: 1753525204
+      Arcade - Gradius - Large Enemies_75: 178371983
+      Arcade - Gradius - Large Enemies_76: -810725763
+      Arcade - Gradius - Large Enemies_77: 1498729958
+      Arcade - Gradius - Large Enemies_78: -856354116
+      Arcade - Gradius - Large Enemies_79: 220704862
+      Arcade - Gradius - Large Enemies_8: 1543303511
+      Arcade - Gradius - Large Enemies_80: -1168000943
+      Arcade - Gradius - Large Enemies_81: -1082497857
+      Arcade - Gradius - Large Enemies_82: 1305617944
+      Arcade - Gradius - Large Enemies_83: -590481925
+      Arcade - Gradius - Large Enemies_84: -1243319795
+      Arcade - Gradius - Large Enemies_85: 1572237171
+      Arcade - Gradius - Large Enemies_86: -1447883763
+      Arcade - Gradius - Large Enemies_87: -537999567
+      Arcade - Gradius - Large Enemies_88: 2111266076
+      Arcade - Gradius - Large Enemies_89: -1098799442
+      Arcade - Gradius - Large Enemies_9: -1709175830
+      Arcade - Gradius - Large Enemies_90: -714531478
+      Arcade - Gradius - Large Enemies_91: -1354987710
+      Arcade - Gradius - Large Enemies_92: -641815477
+      Arcade - Gradius - Large Enemies_93: 1745393661
+      Arcade - Gradius - Large Enemies_94: 544442514
+      Arcade - Gradius - Large Enemies_95: -1204352407
+      Arcade - Gradius - Large Enemies_96: -976918499
+      Arcade - Gradius - Large Enemies_97: -1217782789
+      Arcade - Gradius - Large Enemies_98: 328979998
+      Arcade - Gradius - Large Enemies_99: 1952217302
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

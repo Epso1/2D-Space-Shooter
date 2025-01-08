@@ -201,7 +201,7 @@ MonoBehaviour:
   closeAnimationName: CannonEnemy_Close
   shotsQuantity: 5
   pointsWhenDies: 50
-  explosionPrefab: {fileID: 8173109279539907194, guid: 01cc7d102c9e93d4b90c666280201c86, type: 3}
+  explosionPrefab: {fileID: 8173109279539907194, guid: 3b6dcb777629e4c48989a146119844a6, type: 3}
 --- !u!1 &7645871819409150349
 GameObject:
   m_ObjectHideFlags: 0

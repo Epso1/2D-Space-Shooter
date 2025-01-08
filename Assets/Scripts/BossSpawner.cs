@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class BossSpawner : MonoBehaviour
 {
-    [SerializeField] private float initialWait = 5f;
-    [SerializeField] private GameObject bossPrefab;
+    [SerializeField] private float initialWait = 5f;   
     private GameController gameController;
     [SerializeField] private bool stopScrollWhenBoss;
     [SerializeField] private ScrollingBackground[] backgrounds = new ScrollingBackground[3];
     [SerializeField] private BackgroundMover obstaclesBackgroundMover;
+    [SerializeField] private bool instantiateBoss = true;
+    [SerializeField] private GameObject bossPrefab;
 
     private void Awake()
     {
@@ -38,17 +39,22 @@ public class BossSpawner : MonoBehaviour
         {
             StartCoroutine(StopScroll());
         }
-        yield return new WaitForSeconds(initialWait);       
-        Instantiate(bossPrefab);
+        if (instantiateBoss)
+        {
+            yield return new WaitForSeconds(initialWait);
+            Instantiate(bossPrefab);
+        }
+        
     }
 
     private IEnumerator StopScroll()
     {
+        yield return new WaitForSeconds(initialWait);
         foreach (ScrollingBackground background in backgrounds)
         {
             background.scrollSpeed = 0;
         }
         obstaclesBackgroundMover.bgVelocity = 0;
-        yield return null;
+        
     }
 }
