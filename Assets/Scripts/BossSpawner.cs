@@ -35,10 +35,7 @@ public class BossSpawner : MonoBehaviour
     {
         yield return StartCoroutine(gameController.FadeOutMusicEnum());
         gameController.PlayBossMusic();
-        if (stopScrollWhenBoss)
-        {
-            StartCoroutine(StopScroll());
-        }
+      
         if (instantiateBoss)
         {
             yield return new WaitForSeconds(initialWait);
@@ -46,14 +43,18 @@ public class BossSpawner : MonoBehaviour
         }
         
     }
-
-    private IEnumerator StopScroll()
+    public void StopScroll()
     {
-        yield return new WaitForSeconds(initialWait);
-        foreach (ScrollingBackground background in backgrounds)
+        if (stopScrollWhenBoss)
         {
-            background.scrollSpeed = 0;
+            foreach (ScrollingBackground background in backgrounds)
+            {
+                background.scrollSpeed = 0;
+            }
+            obstaclesBackgroundMover.bgVelocity = 0;
         }
-        obstaclesBackgroundMover.bgVelocity = 0;
+       
     }
+
+    
 }
