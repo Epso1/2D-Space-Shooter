@@ -22,13 +22,10 @@ public class EnemyBullet : MonoBehaviour
         audioSourceFX3.Play();
     }
 
-
     void FixedUpdate()
     {
         rb2D.MovePosition(rb2D.position + direction * bulletSpeed * Time.fixedDeltaTime);
-    }
-
-    
+    }    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

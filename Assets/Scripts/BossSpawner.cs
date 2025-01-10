@@ -12,7 +12,7 @@ public class BossSpawner : MonoBehaviour
     [SerializeField] private bool instantiateBoss = true;
     [SerializeField] private GameObject bossPrefab;
 
-    private void Awake()
+    private void Start()
     {
         gameController = GameObject.FindWithTag("GameController").GetComponent<GameController>();
     }
@@ -55,6 +55,5 @@ public class BossSpawner : MonoBehaviour
             background.scrollSpeed = 0;
         }
         obstaclesBackgroundMover.bgVelocity = 0;
-        
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BossMoai : MonoBehaviour
@@ -15,23 +16,24 @@ public class BossMoai : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform bulletOrigin;
     [SerializeField] private GameObject deadPrefab;
+    [SerializeField] private float shotCoolDownTime = 1f;
     private int pointsWhenHit = 50;
     private int hitCount = 0;
+    private Transform player;
+    private BossMoaiManager bossMoaiManager;
     
 
     private PolygonCollider2D polCollider2D;
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         polCollider2D = GetComponent<PolygonCollider2D>();
-        spriteRenderer.sprite = initialSprite;
+        spriteRenderer.sprite = initialSprite;     
     }
-
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        player = GameObject.FindWithTag("Player").transform;
+        bossMoaiManager = GetComponentInParent<BossMoaiManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -61,13 +63,32 @@ public class BossMoai : MonoBehaviour
         var bigExplosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         bigExplosion.transform.localScale = new Vector3(2, 2, 0);        
         yield return new WaitForSeconds(0.2f);
-        Instantiate(deadPrefab, transform.position, Quaternion.identity);
+        var deadMoai = Instantiate(deadPrefab, transform.position, Quaternion.identity);
+        deadMoai.transform.localScale = this.transform.localScale;
+        bossMoaiManager.DecreaseHitCount();
         Destroy(gameObject);
     }
 
-    private IEnumerator Shoot()
+    private IEnumerator StartShootingEnum()
     {
-        yield return null;
+        while (true)
+        {
+            if (player != null)
+            {
+                Vector2 shotDirection = (player.position - transform.position).normalized;
+                spriteRenderer.sprite = shootSprite;
+                var bulletObject = Instantiate(bulletPrefab, bulletOrigin.position, Quaternion.identity);
+                bulletObject.GetComponent<EnemyBullet>().direction = shotDirection;
+                yield return new WaitForSeconds(0.2f);
+                spriteRenderer.sprite = initialSprite;
+            }            
+            yield return new WaitForSeconds(shotCoolDownTime);
+        }       
+    }
+
+    public void StartShooting()
+    {
+        StartCoroutine(StartShootingEnum());
     }
 
 }

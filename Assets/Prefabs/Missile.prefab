@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce95a7468bbf4454ebd9db408372d534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 8
   initialWait: 0.5
   initialDirection: {x: 0, y: 1}
   obstacleDetectionDistance: 0.5
