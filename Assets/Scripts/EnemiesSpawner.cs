@@ -18,6 +18,7 @@ public class EnemiesSpawner : MonoBehaviour
     [SerializeField] private bool instantiatesPowerUp = false;
     [SerializeField] private bool multipleVerticalOrigins = false;
     private Transform spawnPosition;
+
     public void SpawnEnemies()
     {
         StartCoroutine(SpawnEnemiesEnum());
@@ -29,8 +30,12 @@ public class EnemiesSpawner : MonoBehaviour
 
         for (int i = 0; i < wavesQuantity; i++)
         {
+            List<GameObject> enemies = new List<GameObject>();
+            string waveName = Time.time.ToString();
+
             if (multipleVerticalOrigins)
             {
+                // Si i es par se instancia en primaryPosition, si es impar en secondaryPosition
                 spawnPosition = (i % 2 == 0) ? primaryPosition : secondaryPosition;
                 // Instanciar enemigos de la oleada actual en posiciones verticales incrementales o decrementales
                 Transform startingPosition = (i % 2 == 0) ? primaryPosition : secondaryPosition;
@@ -43,37 +48,42 @@ public class EnemiesSpawner : MonoBehaviour
                         startingPosition.position.y + (j * direction), // Incrementar o decrementar posición en el eje Y para cada enemigo
                         startingPosition.position.z
                     );
-                    Instantiate(enemyPrefab, spawnPositionWithOffset, Quaternion.identity, parentTransform);
+                    GameObject enemy = Instantiate(enemyPrefab, spawnPositionWithOffset, Quaternion.identity, parentTransform);
+                    Enemy enemyComponent = enemy.GetComponent<Enemy>();
+                    enemyComponent.waveName = waveName;
+                    enemyComponent.waveElementsQuantity = enemiesQuantity;
+                    enemyComponent.powerUpToSpawn = powerUpPrefab;
+                    enemyComponent.instantiatesPowerUp = instantiatesPowerUp;
+                    enemies.Add(enemy);
+
                     yield return new WaitForSeconds(waitNextEnemy);
-                }
-
-                yield return new WaitForSeconds(primaryWaitNextWave);
-            }
-            else
-            {
-                spawnPosition = (i % 2 == 0) ? primaryPosition : secondaryPosition;
-
-                // Instanciar enemigos de la oleada actual
-                for (int j = 0; j < enemiesQuantity; j++)
-                {
-                    Instantiate(enemyPrefab, spawnPosition.position, Quaternion.identity, parentTransform);
-                    yield return new WaitForSeconds(waitNextEnemy);
-                }
-
+                }                
+                DataManager.Instance.enemyWaves[waveName] = enemies;
                 float waitTime = (i % 2 == 0) ? primaryWaitNextWave : secondaryWaitNextWave;
                 yield return new WaitForSeconds(waitTime);
             }
-
-            // Instanciar el power-up si corresponde
-            if (instantiatesPowerUp && powerUpPrefab != null)
+            else
             {
-                Instantiate(powerUpPrefab, spawnPosition.position, Quaternion.identity);
+                // Si i es par se instancia en primaryPosition, si es impar en secondaryPosition
+                spawnPosition = (i % 2 == 0) ? primaryPosition : secondaryPosition;
+                // Instanciar enemigos de la oleada actual
+                for (int j = 0; j < enemiesQuantity; j++)
+                {
+                    GameObject enemy = Instantiate(enemyPrefab, spawnPosition.position, Quaternion.identity, parentTransform);
+                    Enemy enemyComponent = enemy.GetComponent<Enemy>();
+                    enemyComponent.waveName = waveName;
+                    enemyComponent.waveElementsQuantity = enemiesQuantity;
+                    enemyComponent.powerUpToSpawn = powerUpPrefab;
+                    enemyComponent.instantiatesPowerUp = instantiatesPowerUp;
+                    enemies.Add(enemy);
+                    yield return new WaitForSeconds(waitNextEnemy);
+                }
+                DataManager.Instance.enemyWaves[waveName] = enemies;
+                float waitTime = (i % 2 == 0) ? primaryWaitNextWave : secondaryWaitNextWave;
+                yield return new WaitForSeconds(waitTime);
             }
         }
     }
-
-
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

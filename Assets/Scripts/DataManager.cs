@@ -14,7 +14,7 @@ public class DataManager : MonoBehaviour
     [HideInInspector] public int lifes = 3;
     private GameController gameController;
     private int highScoreQuantity = 6;
-
+    public Dictionary<string, List<GameObject>> enemyWaves = new Dictionary<string, List<GameObject>>();
     private void Awake()
     {
         if (instance == null)
@@ -35,10 +35,6 @@ public class DataManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.KeypadMultiply))
-        {
-            PrintHighScores();
-        }
         if (gameController != null)
         {
             if (score > topScore)
@@ -105,6 +101,31 @@ public class DataManager : MonoBehaviour
             Debug.Log($"Initials: {highScore.initials}, Score: {highScore.score}");
         }
     }
+
+    // Método para imprimir la oleada y la posición en la oleada de los Enemy en enemyWaves
+    public void PrintEnemyWaves()
+    {
+        foreach (var item in enemyWaves)
+        {
+            Debug.Log("Key: " + item.Key);
+            var array = item.Value.ToArray();
+            foreach (GameObject enemyObject in array)
+            {
+                if (enemyObject != null)
+                {
+                    Debug.Log("- waveName: " + enemyObject.GetComponent<Enemy>().waveName + "\n"
+                   + "- waveElementsQuantity: " + enemyObject.GetComponent<Enemy>().waveElementsQuantity.ToString() + "\n"
+                   + "- powerUpToSpawn: " + enemyObject.GetComponent<Enemy>().powerUpToSpawn.name + "\n"
+                   + "- instantiatesPowerUp: " + enemyObject.GetComponent<Enemy>().instantiatesPowerUp.ToString());
+                }
+                else
+                {
+                    Debug.Log("Null object.");
+                }
+               
+            }
+        }
+    }
     public bool IsHighScore(int currentScore)
     {
         if (currentScore > highScores[highScores.Count - 1].score)
@@ -149,6 +170,7 @@ public class DataManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        ClearEnemyWaves();
         LoadHighScores();
 
         if (GameObject.FindGameObjectWithTag("GameController"))
@@ -190,6 +212,11 @@ public class DataManager : MonoBehaviour
         string json = JsonUtility.ToJson(new HighScoreList(highScores));
         PlayerPrefs.SetString("HighScores", json);
         PlayerPrefs.Save();
+    }
+
+    private void ClearEnemyWaves()
+    {
+        enemyWaves.Clear();
     }
 }
 

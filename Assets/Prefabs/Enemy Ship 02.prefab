@@ -218,8 +218,12 @@ MonoBehaviour:
   explosionPrefab: {fileID: 8173109279539907194, guid: 01cc7d102c9e93d4b90c666280201c86, type: 3}
   bulletPrefab: {fileID: 3594004310088462577, guid: b22195555a1549f41b8fb4e337b3bbf5, type: 3}
   isRandomShotTime: 1
-  minWaitToShoot: 0.2
+  minWaitToShoot: 0.3
   maxWaitToShoot: 2
   bulletOrigin: {fileID: 4969373766392644857}
   pointsWhenDies: 50
+  waveName: 
+  waveElementsQuantity: 0
+  powerUpToSpawn: {fileID: 0}
+  instantiatesPowerUp: 0
   flipAnimationVertically: 0

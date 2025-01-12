@@ -15,9 +15,19 @@ public class Enemy : MonoBehaviour
     protected Rigidbody2D rb;
     protected CircleCollider2D circleCollider;
 
+    public string waveName;
+    public int waveElementsQuantity;
+    public GameObject powerUpToSpawn;
+    public bool instantiatesPowerUp;
+
     void Awake()
     {
    
+    }
+    // Cuando el enemigo es visible, activa su Collider
+    private void OnBecameVisible()
+    {
+        StartCoroutine(EnableCollider());
     }
 
     // Cuando el enemigo no es visible, destruirlo
@@ -38,16 +48,18 @@ public class Enemy : MonoBehaviour
             EnemyDies();
         }
     }
-    // Cuando el enemigo es visible, activa su Collider
-    private void OnBecameVisible()
-    {
-        circleCollider.enabled = true;
-    }
+   
 
     private void EnemyDies()
     {
         DataManager.Instance.AddPoints(pointsWhenDies);
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+
+        // Instanciar el power-up si corresponde
+        if (isTheLastStanding() && instantiatesPowerUp && powerUpToSpawn != null)
+        {
+            Instantiate(powerUpToSpawn, transform.position, Quaternion.identity);
+        }
         Destroy(gameObject);
     }
 
@@ -91,5 +103,31 @@ public class Enemy : MonoBehaviour
             StartCoroutine(Shoot());
         }
         
+    }
+
+    private bool isTheLastStanding()
+    {
+        bool isLast = false;
+        int destroyedCount = 0;
+        if (DataManager.Instance.enemyWaves.ContainsKey(waveName))
+        {
+            foreach(GameObject enemy in DataManager.Instance.enemyWaves[waveName])
+            {
+                if (enemy == null){
+                    destroyedCount++;
+                }
+            }
+            if (destroyedCount == (waveElementsQuantity - 1))
+            {
+                isLast = true;
+            }
+        }
+        return isLast;
+    }
+
+    private IEnumerator EnableCollider()
+    {
+        yield return new WaitForSeconds(0.25f);
+        circleCollider.enabled = true;
     }
 }
