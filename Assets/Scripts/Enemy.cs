@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -20,6 +19,8 @@ public class Enemy : MonoBehaviour
     public GameObject powerUpToSpawn;
     public bool instantiatesPowerUp;
 
+    private float enableColliderTime = 0.2f;
+
     void Awake()
     {
    
@@ -33,6 +34,7 @@ public class Enemy : MonoBehaviour
     // Cuando el enemigo no es visible, destruirlo
     private void OnBecameInvisible()
     {
+        DisableCollider();
         Destroy(gameObject);
     }
 
@@ -52,6 +54,7 @@ public class Enemy : MonoBehaviour
 
     private void EnemyDies()
     {
+        DisableCollider();
         DataManager.Instance.AddPoints(pointsWhenDies);
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 
@@ -115,19 +118,28 @@ public class Enemy : MonoBehaviour
             {
                 if (enemy == null){
                     destroyedCount++;
+                    Debug.Log($"destroyedCount: {destroyedCount}.");
                 }
             }
-            if (destroyedCount == (waveElementsQuantity - 1))
+            if (destroyedCount >= (waveElementsQuantity - 1))
             {
                 isLast = true;
             }
+        }
+        else
+        {
+            Debug.Log("Wave not found.");
         }
         return isLast;
     }
 
     private IEnumerator EnableCollider()
     {
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(enableColliderTime);
         circleCollider.enabled = true;
+    }
+    private void DisableCollider() 
+    { 
+        circleCollider.enabled = false;
     }
 }

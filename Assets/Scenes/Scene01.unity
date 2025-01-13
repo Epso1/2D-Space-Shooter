@@ -13165,6 +13165,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialWait: 3
+  stopScrollWhenBoss: 0
+  backgrounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  obstaclesBackgroundMover: {fileID: 0}
+  instantiateBoss: 1
   bossPrefab: {fileID: 4059895904665844875, guid: 7a1367b8d70bf9f43b5ac96a8060685d, type: 3}
 --- !u!61 &970824128
 BoxCollider2D:
@@ -20319,15 +20326,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3366877786135247079, guid: f8a9abcdf8aa128478a16f2d43c0a179, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7147985
+      value: -1.74
       objectReference: {fileID: 0}
     - target: {fileID: 3366877786135247079, guid: f8a9abcdf8aa128478a16f2d43c0a179, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.19963424
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3366877786135247079, guid: f8a9abcdf8aa128478a16f2d43c0a179, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.0096464
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3366877786135247079, guid: f8a9abcdf8aa128478a16f2d43c0a179, type: 3}
       propertyPath: m_LocalRotation.w

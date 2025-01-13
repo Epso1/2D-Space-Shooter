@@ -31,20 +31,11 @@ public class StageClearSceneController : MonoBehaviour
     {
         scoreText.text = DataManager.Instance.score.ToString();
     }
-    private void Update()
-    {
-
-    }
-
-    public void Move(InputAction.CallbackContext context)
-    {
-       
-
-    }
+    public void Move(InputAction.CallbackContext context){}
    
     public void Submit(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && buttons[selectedIndex].enabled)
         {
             buttons[selectedIndex].GetComponent<Image>().color = color2;
             buttons[selectedIndex].onClick.Invoke();

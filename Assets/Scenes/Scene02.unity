@@ -2246,7 +2246,7 @@ MonoBehaviour:
   missileOrigin: {fileID: 1842397608}
   shotSFX: {fileID: 8300000, guid: 82106f57fabeb7e449c9ece356ca363b, type: 3}
   explosionPrefab: {fileID: 8173109279539907194, guid: 01cc7d102c9e93d4b90c666280201c86, type: 3}
-  missileCooldownTime: 2
+  missileCooldownTime: 1
   multiplePrefab: {fileID: 5317355778180285526, guid: a2e97239a25229f41a7a3522bc7c5a06, type: 3}
   missileEnabled: 0
   multipleEnabled: 0

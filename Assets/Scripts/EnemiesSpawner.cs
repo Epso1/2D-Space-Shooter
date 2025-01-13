@@ -32,6 +32,7 @@ public class EnemiesSpawner : MonoBehaviour
         {
             List<GameObject> enemies = new List<GameObject>();
             string waveName = Time.time.ToString();
+            DataManager.Instance.enemyWaves[waveName] = enemies;
 
             if (multipleVerticalOrigins)
             {
@@ -54,11 +55,12 @@ public class EnemiesSpawner : MonoBehaviour
                     enemyComponent.waveElementsQuantity = enemiesQuantity;
                     enemyComponent.powerUpToSpawn = powerUpPrefab;
                     enemyComponent.instantiatesPowerUp = instantiatesPowerUp;
-                    enemies.Add(enemy);
+                    //enemies.Add(enemy);
+                    DataManager.Instance.enemyWaves[waveName].Add(enemy);
 
                     yield return new WaitForSeconds(waitNextEnemy);
                 }                
-                DataManager.Instance.enemyWaves[waveName] = enemies;
+                
                 float waitTime = (i % 2 == 0) ? primaryWaitNextWave : secondaryWaitNextWave;
                 yield return new WaitForSeconds(waitTime);
             }
@@ -75,10 +77,12 @@ public class EnemiesSpawner : MonoBehaviour
                     enemyComponent.waveElementsQuantity = enemiesQuantity;
                     enemyComponent.powerUpToSpawn = powerUpPrefab;
                     enemyComponent.instantiatesPowerUp = instantiatesPowerUp;
-                    enemies.Add(enemy);
+                    //enemies.Add(enemy);
+                    DataManager.Instance.enemyWaves[waveName].Add(enemy);
+
                     yield return new WaitForSeconds(waitNextEnemy);
                 }
-                DataManager.Instance.enemyWaves[waveName] = enemies;
+                
                 float waitTime = (i % 2 == 0) ? primaryWaitNextWave : secondaryWaitNextWave;
                 yield return new WaitForSeconds(waitTime);
             }

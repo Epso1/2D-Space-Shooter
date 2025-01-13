@@ -146,9 +146,9 @@ public class Missile : MonoBehaviour
     {
         // Determina el ángulo de la dirección en grados
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
+      
         // Asigna el sprite según el ángulo calculado
-        if (angle >= -22.5f && angle < 22.5f)
+        if (angle >= -22.5f && angle < 22.5f)            
             spriteRenderer.sprite = directionSprites[0]; // Derecha
         else if (angle >= 22.5f && angle < 67.5f)
             spriteRenderer.sprite = directionSprites[7]; // Diagonal arriba-derecha

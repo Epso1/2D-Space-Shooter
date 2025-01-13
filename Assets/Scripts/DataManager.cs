@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -35,6 +34,8 @@ public class DataManager : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.KeypadMultiply)) { PrintEnemyWaves(); }
+
         if (gameController != null)
         {
             if (score > topScore)
